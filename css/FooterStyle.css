@@ -1,0 +1,209 @@
+body
+{
+    margin-bottom : -3rem;
+}
+
+footer
+{
+    padding    : 4rem;
+    border-top : 1px solid white;
+}
+
+.footer
+{
+    margin-top          : -14rem;
+    background-color    : #F1F3F4;
+    background-image    : url('../images/FooterPurpleWave.svg');
+    background-repeat   : no-repeat;
+    background-position : center bottom;
+    background-size     : 100% auto;
+}
+
+.footerDiv
+{
+    width          : 65%;
+    margin-left    : 14rem;
+    padding-top    : 32rem;
+    padding-bottom : 5rem;
+}
+
+.footer img:not(.rightRow img)
+{
+    width         : 6.5rem;
+    height        : 6.5rem;
+    margin-bottom : -1rem;
+    margin-left   : 3rem;
+}
+
+.footerDiv,
+.middleRow,
+.rightRow
+{
+    display        : flex;
+    flex-direction : column;
+    color          : white;
+}
+
+.bellowLogo
+{
+    display         : flex;
+    flex-direction  : row;
+    justify-content : space-around;
+    margin-top      : 7rem;
+}
+
+.bellowLogo p:not(.rightRow p)
+{
+    width       : 25%;
+    margin-top  : 0.1rem;
+    font-size   : 1.3rem;
+    line-height : 2.3rem;
+    word-break  : break-word;
+}
+
+.middleRow button
+{
+    font-size   : 1.3rem;
+    line-height : 2.3rem;
+    color       : white;
+    border      : none;
+    background  : none;
+}
+
+.middleRow button:hover
+{
+    cursor    : pointer;
+    transform : scale(1.05);
+}
+
+.rightRow a
+{
+    display         : flex;
+    align-items     : center;
+    flex-direction  : row;
+    justify-content : flex-start;
+    font-size       : 1.2rem;
+    line-height     : 0.2rem;
+    text-decoration : none;
+    color           : white;
+}
+
+.rightRow i
+{
+    margin-right : 1rem;
+    font-size    : 1.5rem;
+    color        : #FFCA05;
+}
+
+.rightRow i:hover
+{
+    cursor    : pointer;
+    transform : scale(1.05);
+}
+
+.rightRow img
+{
+    margin-right : 1rem;
+}
+
+.socialMediaFooter
+{
+    margin-top  : -1.3rem;
+    margin-left : -1.4rem;
+}
+
+.socialMediaFooter i
+{
+    margin-right : 0.6rem;
+    font-size    : 1.4rem;
+}
+
+@media (max-width : 1380px)
+{
+    .footer
+    {
+        margin-top : -23rem;
+    }
+    .footer img:not(.rightRow img)
+    {
+        width         : 5.5rem;
+        height        : 5.5rem;
+        margin-bottom : -3.5rem;
+        margin-left   : 1.5rem;
+    }
+    .footerDiv
+    {
+        width       : 65%;
+        margin-left : 10rem;
+
+    }
+}
+
+@media (max-width : 1250px)
+{
+    .footerDiv
+    {
+        width          : 75%;
+        margin-left    : 5rem;
+        padding-bottom : 1rem;
+    }
+    .footer img:not(.rightRow img)
+    {
+        margin-left : 7rem;
+    }
+}
+
+@media (max-width : 1090px)
+{
+    .footer img:not(.rightRow img)
+    {
+        margin-bottom : -5rem;
+        margin-left   : 6rem;
+    }
+}
+
+@media (max-width : 1000px)
+{
+    .footer img:not(.rightRow img)
+    {
+        width:5rem;
+        height:5rem;
+        margin-bottom   : -3rem;
+    }
+
+    footer {
+        padding:0rem;
+    }
+
+    .footerDiv
+    {
+        margin-left:2rem;
+    }
+
+    .bellowLogo {
+        width:115%;
+        justify-content:space-between;
+
+    }
+
+    .bellowLogo p:not(.rightRow p),
+    .rightRow p,
+    .middleRow button
+    {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width:760px) {
+    .footer img:not(.rightRow img) {
+        margin-bottom:-5rem;
+    }
+}
+
+@media (max-width: 692px) {
+    .footer img:not(.rightRow img) {
+        width:4rem;
+        height:4rem;
+        margin-bottom:-5rem;
+    }
+}

@@ -1,0 +1,186 @@
+/* .Screenshot has the same style as .AboutApp
+ It's joined in the AboutAppStyle.css */
+
+/* Same applies for .Screenshot img and .AboutApp img */
+
+/* Same applies for .ScreenshotTextDiv and .AboutTextDiv */
+
+/* Same applies for h1, h2, and p */
+
+.Screenshot
+{
+    align-items : center;
+    margin-top  : 17rem;
+}
+
+.ScreenshotTextDiv h1
+{
+    width       : 50rem;
+    margin-top  : -1rem;
+    font-size   : 3rem;
+    line-height : 3.5rem;
+}
+
+.ScreenshotTextDiv p
+{
+    width : 53rem;
+}
+
+.ScreenshotTextDiv ul
+{
+    margin-top      : -1rem;
+    margin-left     : -2.5rem;
+    list-style-type : none;
+    color           : #B1B1B1;
+}
+
+.ScreenshotTextDiv ul li
+{
+    margin-top : 1rem;
+    font-size  : 1.2rem;
+}
+
+.fa-check
+{
+    width        : 1rem;
+    height       : 1rem;
+    margin-right : 1rem;
+    font-size    : 1rem;
+    line-height  : 2rem;
+    color        : #E7C132;
+}
+
+.sidePic
+{
+    display         : flex;
+    align-items     : center;
+    flex-direction  : row;
+    justify-content : center;
+    margin-right    : 5rem;
+}
+
+.sidePic img
+{
+    height : 38em;
+}
+
+.Ellipses
+{
+    display        : flex;
+    flex-direction : column;
+    margin-top     : -4rem;
+    margin-left    : 1.5rem;
+}
+
+.Ellipses img
+{
+    width      : 1rem;
+    height     : 1rem;
+    margin-top : 0.8rem;
+}
+
+/* for devices of width : 952px and less style is applied in the AboutAppStyle.css */
+/* for devices of width : 858px and less style is applied in the AboutAppStyle.css */
+
+@media (max-width : 1350px)
+{
+    .ScreenshotTextDiv h1
+    {
+        width : 40rem;
+    }
+
+    .ScreenshotTextDiv p
+    {
+        width : 43rem;
+    }
+}
+
+@media (max-width : 1190px)
+{
+    .ScreenshotTextDiv h1
+    {
+        width     : 30rem;
+        font-size : 2.7rem;
+    }
+
+    .ScreenshotTextDiv p
+    {
+        width : 33rem;
+    }
+}
+
+@media (max-width : 952px)
+{
+    .ScreenshotTextDiv h1
+    {
+        width : 23rem;
+    }
+    .sidePic
+    {
+        margin-top   : 0.1rem;
+        margin-right : -15rem;
+    }
+}
+
+@media (max-width : 650px)
+{
+    .Screenshot
+    {
+        margin-top  : 7rem;
+        margin-left : -8rem;
+    }
+
+    .ScreenshotTextDiv h1
+    {
+        width : 28rem;
+    }
+
+    .ScreenshotTextDiv p
+    {
+        width : 33rem;
+    }
+
+    .ScreenshotTextDiv ul li
+    {
+        width : 33rem;
+    }
+
+    .sidePic
+    {
+        margin : 3rem 0 0 10rem;
+    }
+}
+
+@media (max-width : 500px)
+{
+    .Screenshot
+    {
+        margin-left : 0;
+    }
+    .ScreenshotTextDiv h2
+    {
+        font-size : 2rem;
+    }
+    .ScreenshotTextDiv h1
+    {
+        width     : 20rem;
+        font-size : 2.8rem;
+    }
+    .ScreenshotTextDiv p
+    {
+        width : 20rem;
+    }
+    .ScreenshotTextDiv ul li
+    {
+        width : 20rem;
+    }
+    .section04ReadMore
+    {
+        font-size : 1.3rem;
+    }
+    .sidePic
+    {
+        margin : 3rem 0 0;
+    }
+}
+

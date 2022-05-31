@@ -1,0 +1,195 @@
+.Download img
+{
+    width      : 48rem;
+    height     : 50rem;
+    margin-top : -8rem;
+}
+
+.DownloadTextDiv
+{
+    margin-right : 7rem;
+    margin-left  : -10rem;
+}
+
+.DownloadTextDiv h1
+{
+    margin-bottom : 5rem;
+    font-size     : 3.6rem;
+    line-height   : 3.5rem;
+}
+
+.DownloadTextDiv p:not (.appButton p)
+{
+    font-size   : 1.3rem;
+    line-height : 2.2rem;
+}
+
+.socialButtons
+{
+    display     : flex;
+    align-items : center;
+    margin-top  : 3.5rem;
+}
+
+.appButton
+{
+    display          : flex;
+    align-items      : center;
+    justify-content  : space-evenly;
+    width            : 296px;
+    height           : 100px;
+    margin           : 1rem 1rem;
+    transition       : background-color 0.25s linear;
+    text-align       : left;
+    text-decoration  : none;
+    text-transform   : uppercase;
+    color            : #FFFFFF;
+    border-radius    : 10rem;
+    background-color : #2E3191;
+}
+
+.appButton p
+{
+    margin-top : 1rem;
+    font-size  : 1rem;
+    color      : #FFFFFF;
+}
+
+.appButton i
+{
+    margin-right : -1.5rem;
+    font-size    : 2.8rem;
+    text-align   : center;
+}
+.bigText
+{
+    font-size      : 1.5rem;
+    text-transform : capitalize;
+}
+
+@media (max-width : 1190px)
+{
+    .Download img
+    {
+        width  : 40rem;
+        height : 48rem;
+    }
+
+    .DownloadTextDiv h1
+    {
+        font-size : 3.3rem;
+    }
+}
+
+@media (max-width : 1120px)
+{
+    .Download img
+    {
+        width  : 37rem;
+        height : 45rem;
+    }
+
+    .DownloadTextDiv
+    {
+        width       : 31rem;
+        margin-left : -8rem;
+    }
+
+    .DownloadTextDiv h1
+    {
+        font-size : 2.8rem;
+    }
+
+    .DownloadTextDiv p:not (.appButton p)
+    {
+        font-size : 1.3rem;
+    }
+
+    .appButton i
+    {
+        margin-right : 0.1rem;
+    }
+
+    .appButton p
+    {
+        font-size : 0.8rem;
+    }
+    .bigText
+    {
+        font-size : 1.3rem;
+    }
+}
+
+@media (max-width : 952px)
+{
+    .Download
+    {
+        align-items    : center;
+        flex-direction : column-reverse;
+        margin-top     : 4rem;
+    }
+
+    .DownloadTextDiv
+    {
+        margin-left : 30rem;
+    }
+
+    .Download img
+    {
+        width       : 45rem;
+        height      : 45rem;
+        margin-top  : -25rem;
+        margin-left : -23rem;
+    }
+
+    .appButton
+    {
+        height : 5rem;
+    }
+
+    .appButton i
+    {
+        margin-right : 0.1rem;
+        font-size    : 2.4rem;
+    }
+
+}
+
+@media (max-width : 850px)
+{
+    .Download
+    {
+        align-items    : center;
+        flex-direction : column;
+        margin-top     : -5rem;
+    }
+    .Download img
+    {
+        width  : 45rem;
+        height : 47rem;
+        margin : 0;
+    }
+    .DownloadTextDiv
+    {
+        margin : 0;
+    }
+}
+
+@media (max-width : 500px)
+{
+    .Download img
+    {
+        width  : 30rem;
+        height : 32rem;
+    }
+    .DownloadTextDiv
+    {
+        width       : 22rem;
+        margin-left : 2rem;
+    }
+    .socialButtons
+    {
+        flex-direction : column;
+        margin-left    : -1rem;
+    }
+}

@@ -1,0 +1,103 @@
+.featuresDiv,
+.TestimonialDiv,
+.PricingPlan
+{
+    display         : flex;
+    align-items     : center;
+    flex-direction  : column;
+    justify-content : center;
+}
+
+.featuresDiv h2,
+.Testimonial h2,
+.PricingPlan h2
+{
+    font-size   : 2rem;
+    font-weight : 700;
+    color       : #2C3181;
+}
+
+.featuresDiv h1,
+.Testimonial h1,
+.PricingPlan h1
+{
+    margin-top  : 0;
+    font-family : 'Poppins', sans-serif;
+    font-size   : 3rem;
+    font-weight : 700;
+    color       : black;
+}
+
+.features
+{
+    display               : grid;
+    justify-content       : center;
+    grid-template-columns : 28% 28% 28%;
+    grid-auto-rows        : calc(49%);
+    grid-gap              : 2rem;
+}
+
+.features div
+{
+    display          : flex;
+    flex-direction   : column;
+    padding          : 2rem 2rem;
+    border           : 1px solid #F1F3F4;
+    border-radius    : 0.65rem;
+    background-color : #F1F3F4;
+}
+
+.features div img
+{
+    width            : 1.9rem;
+    height           : 1.9rem;
+    padding          : 1.2rem;
+    border-radius    : 50px;
+    background-color : #2C3181;
+}
+
+.features div h3
+{
+    margin-top  : 1.9rem;
+    font-size   : 1.3rem;
+    font-weight : 700;
+    color       : #2E3191;
+}
+
+.features div p
+{
+    margin-top  : 0;
+    font-size   : small;
+    font-size   : 1.2rem;
+    font-weight : 300;
+    line-height : 1.6rem;
+    word-break  : break-word;
+    color       : #343434;
+}
+
+@media (max-width : 1330px)
+{
+    .features
+    {
+        grid-template-columns : 53% 53%;
+        grid-template-rows    : 38% 38% 38%;
+        column-gap            : 4rem;
+        row-gap               : 2rem;
+    }
+}
+
+@media (max-width : 858px)
+{
+    .features
+    {
+        grid-auto-columns     : auto;
+        grid-template-columns : calc(90%);
+        grid-template-rows    : calc(15%);
+        grid-auto-rows        : auto;
+    }
+    .featuresDiv h1
+    {
+        font-size  : 2.5rem;
+        text-align : center;
+    }
+}
