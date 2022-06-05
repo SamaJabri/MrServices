@@ -249,3 +249,20 @@
         background : #2E3191;
     }
 }
+
+@media (max-width : 445px)
+{
+    .monthlyPlans,
+    .yearlyPlans
+    {
+        grid-template-columns : 80%;
+        grid-auto-rows        : calc(36%);
+    }
+
+    .planBody button
+    {
+        width       : 13rem;
+        margin-left : -4rem;
+        font-size   : 1.3rem;
+    }
+}
