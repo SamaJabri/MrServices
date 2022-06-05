@@ -1,0 +1,799 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <title>Mr Services</title>
+        <meta charset="UTF-8" />
+        <meta name="author" content="Author Name" />
+        <meta name="description" content="Page Description" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+        <link rel="stylesheet"
+              href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+        <!-- Google Fonts -->
+        <!-- Comfortaa; weight: 300 -->
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&display=swap" rel="stylesheet">
+
+        <!-- Poppins; weight: 700 -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&family=Poppins:wght@700&display=swap" rel="stylesheet">
+
+        <link rel="stylesheet" href="css/HomePageStyle.css" />
+        <link rel="stylesheet" href="css/AboutAppStyle.css" />
+        <link rel="stylesheet" href="css/FeaturesStyle.css" />
+        <link rel="stylesheet" href="css/ScreenshotStyle.css" />
+        <link rel="stylesheet" href="css/HowItWorksStyle.css" />
+        <link rel="stylesheet" href="css/DownloadStyle.css" />
+        <link rel="stylesheet" href="css/TestimonialStyle.css" />
+        <link rel="stylesheet" href="css/PricingPlanStyle.css" />
+        <link rel="stylesheet" href="css/ContactUsStyle.css" />
+        <link rel="stylesheet" href="css/FooterStyle.css" />
+
+        <noscript>
+            <meta http-equiv="refresh" content="0; url=" />
+        </noscript>
+
+        <script src = "js/TransitionSections.js"></script>
+<!--        <script src = "ReviewsSlideShow.js"></script>-->
+
+    </head>
+
+    <body>
+
+        <section class = "curve Intro">
+
+            <header class = "header">
+
+                <nav>
+
+                    <img class = "logo" src="images/Logo.svg" alt = "logo"/>
+
+                    <input type = "checkbox" id = "check" >
+
+                    <ul class = "options">
+                        <li>
+                            <div class = "onHover"></div>
+                            <a href = "#">
+                                Home
+                            </a>
+                        </li>
+                        <li>
+                            <div class = "onHover"></div>
+                            <a href = "#About">
+                                About
+                            </a>
+                        </li>
+                        <li>
+                            <div class = "onHover"></div>
+                            <a href = "#Feature">
+                                Feature
+                            </a>
+                        </li>
+                        <li>
+                            <div class = "onHover"></div>
+                            <a href = "#Pricing">
+                                Pricing
+                            </a>
+                        </li>
+                        <li>
+                            <div class = "onHover"></div>
+                            <a href = "#Review">
+                                Review
+                            </a>
+                        </li>
+                        <li>
+                            <div class = "onHover"></div>
+                            <a href = "#Contact">
+                                Contact
+                            </a>
+                        </li>
+                    </ul>
+
+                    <label for = "check" class = "checkButton">
+                        <i class = "fas fa-bars"></i>
+                    </label>
+
+                    <ul class = "socialMediaIcons">
+                        <li><i class="fa-brands fa-linkedin"></i></li>
+                        <li><i class="fa-brands fa-instagram"></i></li>
+                        <li><i class="fa-brands fa-facebook-square"></i></li>
+                        <li><i class="fa-brands fa-youtube"></i></li>
+                        <li><i class="fa-brands fa-twitter-square"></i></li>
+                    </ul>
+
+                </nav>
+
+            </header>
+
+            <div class = "section01">
+
+                <div class = "section01Contents">
+                    <h1>The Art Of Service</h1>
+                    <p>Here goes some text about the app and the website in general.
+                       Click the search button below to start</p>
+
+                    <form class="searchBox" onsubmit="return false">
+
+                        <input class="searchInput" type="text" id="searchItem" name=""
+                               placeholder="Go on give it a go !">
+
+                           <button onclick="search()">
+
+
+                               <i class="fa fa-search"></i>
+                           </button>
+
+                    </form>
+
+                </div>
+
+                <img src="images/WorkersImage-Intro.svg" alt = "Workers Image">
+
+            </div>
+
+        </section>
+
+        <section class = "AboutApp animate" id = "About">
+
+            <div class = "AboutTextDiv">
+                <h2>About App</h2>
+                <h1>App For Your Fitness</h1>
+                <p>This is a section about the app, here we write general info about the app.</p>
+
+                <div class = "siteNumbers">
+
+                    <div class = "activeInstalls">
+                        <h1>1234</h1>
+                        <label>Active Install</label>
+
+                    </div>
+
+                    <div class = "clientsReview">
+                        <h1>1234</h1>
+                        <label>Clients Reviews</label>
+                    </div>
+
+                </div>
+
+                <button class = "section02ReadMore">Read More</button>
+            </div>
+
+            <img src = "images/MobilePhones-AboutSection.svg" alt = "Screenshots from app">
+
+        </section>
+
+        <section class = "animate" id = "Feature">
+
+            <div class = "featuresDiv">
+                <h2>App Features</h2>
+                <h1>Awesome Features</h1>
+
+                <div class = "features">
+
+                    <div>
+                        <img src = "images/YellowEyeInFeatures.svg" alt = "Feature01 image">
+                        <h3>Feature 01</h3>
+                        <p>This is some text talking about this feature in detail.</p>
+                    </div>
+
+                    <div>
+                        <img src = "images/YellowEyeInFeatures.svg" alt = "Feature02 image">
+                        <h3>Feature 02</h3>
+                        <p>This is some text talking about this feature in detail.</p>
+                    </div>
+
+                    <div>
+                        <img src = "images/YellowEyeInFeatures.svg" alt = "Feature03 image">
+                        <h3>Feature 03</h3>
+                        <p>This is some text talking about this feature in detail.</p>
+                    </div>
+
+                    <div>
+                        <img src = "images/YellowEyeInFeatures.svg" alt = "Feature04 image">
+                        <h3>Feature 04</h3>
+                        <p>This is some text talking about this feature in detail.</p>
+                    </div>
+
+                    <div>
+                        <img src = "images/YellowEyeInFeatures.svg" alt = "Feature05 image">
+                        <h3>Feature 05</h3>
+                        <p>This is some text talking about this feature in detail.</p>
+                    </div>
+
+                    <div>
+                        <img src = "images/YellowEyeInFeatures.svg" alt = "Feature06 image">
+                        <h3>Feature 06</h3>
+                        <p>This is some text talking about this feature in detail.</p>
+                    </div>
+
+                </div>
+            </div>
+
+        </section>
+
+        <section class = "Screenshot animate" id = "Screenshot">
+
+            <div class = "ScreenshotTextDiv">
+                <h2>Screenshot</h2>
+                <h1>User Friendly Interface and Very Easy-To-Use Fitness App</h1>
+
+                <p>Some really long explanation about this UI being friendly and easy-to-use,
+                it can be upto to 3 lines long. keep in mind it's accompanied with a pic for easier understanding</p>
+
+                <ul>
+                    <li><i class="fa fa-check" aria-hidden="true"></i>
+                        First Check: some text entered here
+                    </li>
+                    <li><i class="fa fa-check" aria-hidden="true"></i>
+                        Second Check: some text entered here
+                    </li>
+                    <li><i class="fa fa-check" aria-hidden="true"></i>
+                        Third Check: some text entered here
+                    </li>
+                </ul>
+
+                <button class = "section04ReadMore">Read More</button>
+            </div>
+
+            <div class = "sidePic">
+
+                <img src = "images/ScreenshotSectionPhoto.png" alt = "Some photos from app">
+
+                <div class = "Ellipses">
+                    <img src = "images/PurpleEllipse.svg" alt = "Ellipse">
+                    <img src = "images/PurpleEllipse.svg" alt = "Ellipse">
+                    <img src = "images/PurpleEllipse.svg" alt = "Ellipse">
+                    <img src = "images/PurpleEllipse.svg" alt = "Ellipse">
+                    <img src = "images/PurpleEllipse.svg" alt = "Ellipse">
+                </div>
+
+            </div>
+
+
+        </section>
+
+        <section class = "HowItWorks animate" id = "HowItWorks">
+
+            <div class = "HowItWorksDiv">
+
+                <h2>How It Works</h2>
+                <h1>3 Easy Steps</h1>
+
+                <div class = "Steps">
+
+                    <div class = "step">
+
+                        <span>
+                            <img src = "images/SettingsInHowItWorks.svg" alt = "Settings Icon"
+                            />
+                        </span>
+
+                        <h5>Install The App</h5>
+                        <p>According to your mobile software type,
+                           use Google Play version for Android
+                           or you can use Apple Store version for IOS
+                        </p>
+                    </div>
+
+                    <div class = "step">
+
+                        <span>
+                            <img src="images/UserInHowItWorks.svg" alt="User Icon" />
+                        </span>
+
+                        <h5>Setup Your Profile</h5>
+                        <p>Open the app, put your credentials
+                           and you're ready to go and discover
+                        </p>
+                    </div>
+
+                    <div class = "step">
+
+                        <span>
+                            <img src="images/CheckInHowItWorks.svg" alt="Check Icon" />
+                        </span>
+
+                        <h5>Enjoy The Features</h5>
+                        <p>Going through the app you can explore
+                           our various features from home-related
+                           services and more
+                        </p>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <section class = "Download animate" id = "Download">
+
+            <img src = "images/SignInScreenshot-DownloadSection.svg" alt = "Sign in screenshot from app"/>
+
+            <div class = "DownloadTextDiv">
+                <h2>Download</h2>
+                <h1>Download The Latest Version Of Our App</h1>
+
+                <p>You're one click away from enjoying the availability of the various services you always needed.
+                What are you waiting for? Downloading is 100% free </p>
+
+                <div class="socialButtons">
+                    <a href="https://play.google.com/store/apps/details?id=com.GoDiGi.mr_service&hl=tr&gl=US"
+                       class="appButton" target="_blank">
+                        <i class="fab fa-google-play"></i>
+                        <p>Get it on <br/> <span class="bigText">Google Play</span></p>
+                    </a>
+
+                    <a href="https://apple.com"
+                       class="appButton" target="_blank">
+                        <i class="fab fa-apple"></i>
+                        <p>Also available on <br/> <span class="bigText">App Store</span></p>
+                    </a>
+                </div>
+            </div>
+
+        </section>
+
+        <section class = "PricingPlan animate" id = "Pricing">
+            <div>
+                <h2>Pricing Plan</h2>
+                <h1>Choose Your Plan</h1>
+
+                <div class = "monthlyOrYearly">
+                    <input type = "radio" id = "monthly" class = "monthly" checked>
+                    <label class = "line" for = "monthly"
+                           style = "border-bottom-right-radius:0; border-top-right-radius:0;">
+                        Monthly
+                    </label>
+
+                    <input type = "radio" id = "yearly">
+                    <label class = "label2" for = "yearly"
+                           style = "border-bottom-left-radius:0; border-top-left-radius:0;">
+                        Yearly
+                    </label>
+                </div>
+
+                <div class = "monthlyPlans" id = "monthlyPlans">
+                    <div class = plan>
+                        <div class = "planHeader">
+                            <h6>Starter Plan (month)</h6>
+                            <p>Powerful & Awesome Features</p>
+                        </div>
+                        <div class = "planBody">
+                            <p><sup>$</sup>14.99<sub>/ month</sub></p>
+
+                            <ul>
+                                <li>
+                                    Feature one
+                                    <i class="fa fa-check" aria-hidden="true"></i>
+                                </li>
+                                <li>
+                                    Feature two
+                                    <i class="fa fa-check" aria-hidden="true"></i>
+                                </li>
+                                <li>
+                                    Feature three
+                                    <i class="fa fa-check" aria-hidden="true"></i>
+                                </li>
+                                <li>
+                                    Feature four
+                                    <i class="fa fa-check" aria-hidden="true"></i>
+                                </li>
+                            </ul>
+
+                            <button>Get Started</button>
+                        </div>
+                    </div>
+                    <div class = plan>
+                        <div class = "planHeader">
+                            <h6>Starter Plan (month)</h6>
+                            <p>Powerful & Awesome Features</p>
+                        </div>
+                        <div class = "planBody">
+                            <p><sup>$</sup>14.99<sub>/ month</sub></p>
+
+                            <ul>
+                                <li>
+                                    Feature one
+                                    <i class="fa fa-check" aria-hidden="true"></i>
+                                </li>
+                                <li>
+                                    Feature two
+                                    <i class="fa fa-check" aria-hidden="true"></i>
+                                </li>
+                                <li>
+                                    Feature three
+                                    <i class="fa fa-check" aria-hidden="true"></i>
+                                </li>
+                                <li>
+                                    Feature four
+                                    <i class="fa fa-check" aria-hidden="true"></i>
+                                </li>
+                            </ul>
+
+                            <button>Get Started</button>
+                        </div>
+                    </div>
+                    <div class = plan>
+                        <div class = "planHeader">
+                            <h6>Starter Plan (month)</h6>
+                            <p>Powerful & Awesome Features</p>
+                        </div>
+                        <div class = "planBody">
+                            <p><sup>$</sup>14.99<sub>/ month</sub></p>
+
+                            <ul>
+                                <li>
+                                    Feature one
+                                    <i class="fa fa-check" aria-hidden="true"></i>
+                                </li>
+                                <li>
+                                    Feature two
+                                    <i class="fa fa-check" aria-hidden="true"></i>
+                                </li>
+                                <li>
+                                    Feature three
+                                    <i class="fa fa-check" aria-hidden="true"></i>
+                                </li>
+                                <li>
+                                    Feature four
+                                    <i class="fa fa-check" aria-hidden="true"></i>
+                                </li>
+                            </ul>
+
+                            <button>Get Started</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class = "yearlyPlans" id = "yearlyPlans" style = "display: none;">
+                    <div class = plan>
+                        <div class = "planHeader">
+                            <h6>Starter Plan (year)</h6>
+                            <p>Powerful & Awesome Features</p>
+                        </div>
+                        <div class = "planBody">
+                            <p><sup>$</sup>14.99<sub>/ month</sub></p>
+
+                            <ul>
+                                <li>
+                                    Feature one
+                                    <i class="fa fa-check" aria-hidden="true"></i>
+                                </li>
+                                <li>
+                                    Feature two
+                                    <i class="fa fa-check" aria-hidden="true"></i>
+                                </li>
+                                <li>
+                                    Feature three
+                                    <i class="fa fa-check" aria-hidden="true"></i>
+                                </li>
+                                <li>
+                                    Feature four
+                                    <i class="fa fa-check" aria-hidden="true"></i>
+                                </li>
+                            </ul>
+
+                            <button>Get Started</button>
+                        </div>
+                    </div>
+                    <div class = plan>
+                        <div class = "planHeader">
+                            <h6>Starter Plan (year)</h6>
+                            <p>Powerful & Awesome Features</p>
+                        </div>
+                        <div class = "planBody">
+                            <p><sup>$</sup>14.99<sub>/ month</sub></p>
+
+                            <ul>
+                                <li>
+                                    Feature one
+                                    <i class="fa fa-check" aria-hidden="true"></i>
+                                </li>
+                                <li>
+                                    Feature two
+                                    <i class="fa fa-check" aria-hidden="true"></i>
+                                </li>
+                                <li>
+                                    Feature three
+                                    <i class="fa fa-check" aria-hidden="true"></i>
+                                </li>
+                                <li>
+                                    Feature four
+                                    <i class="fa fa-check" aria-hidden="true"></i>
+                                </li>
+                            </ul>
+
+                            <button>Get Started</button>
+                        </div>
+                    </div>
+                    <div class = plan>
+                        <div class = "planHeader">
+                            <h6>Starter Plan (year)</h6>
+                            <p>Powerful & Awesome Features</p>
+                        </div>
+                        <div class = "planBody">
+                            <p><sup>$</sup>14.99<sub>/ month</sub></p>
+
+                            <ul>
+                                <li>
+                                    Feature one
+                                    <i class="fa fa-check" aria-hidden="true"></i>
+                                </li>
+                                <li>
+                                    Feature two
+                                    <i class="fa fa-check" aria-hidden="true"></i>
+                                </li>
+                                <li>
+                                    Feature three
+                                    <i class="fa fa-check" aria-hidden="true"></i>
+                                </li>
+                                <li>
+                                    Feature four
+                                    <i class="fa fa-check" aria-hidden="true"></i>
+                                </li>
+                            </ul>
+
+                            <button>Get Started</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class = "Testimonial animate" id = "Review">
+            <div class = "TestimonialDiv">
+                <h2>Testimonial</h2>
+                <h1>What Our Clients Say!</h1>
+
+                <div class = "clients">
+                    <div class = "client">
+
+                        <div class = "clientCredentials">
+                            <img src="images/Client1.jpg" alt = "Client Photo"
+                                 width = "512" height = "512">
+                            <div class = "clientNameAndProfession">
+                                <h6>Client Name1</h6>
+                                <p>Profession</p>
+                                <div class = "ratings">
+                                    <label>☆</label>
+                                    <label>☆</label>
+                                    <label>☆</label>
+                                    <label>☆</label>
+                                    <label>☆</label>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <p>I had a great experience with this app, fast and clean services. On time and on need
+                        They never fail to solve my issues</p>
+
+                    </div>
+
+                    <div class = "client">
+
+                        <div class = "clientCredentials">
+                            <img src="images/Client2.jpg" alt = "Client Photo">
+                            <div class = "clientNameAndProfession">
+                                <h6>Client Name2</h6>
+                                <p>Profession</p>
+                                <div class = "ratings">
+                                    <label>☆</label>
+                                    <label>☆</label>
+                                    <label>☆</label>
+                                    <label>☆</label>
+                                    <label>☆</label>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <p>I had a great experience with this app, fast and clean services. On time and on need
+                        They never fail to solve my issues</p>
+
+                    </div>
+
+                    <div class = "client">
+
+                        <div class = "clientCredentials">
+                            <img src="images/User.svg.png" alt = "Client Photo">
+                            <div class = "clientNameAndProfession">
+                                <h6>Client Name3</h6>
+                                <p>Profession</p>
+                                <div class = "ratings">
+                                    <label>☆</label>
+                                    <label>☆</label>
+                                    <label>☆</label>
+                                    <label>☆</label>
+                                    <label>☆</label>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <p>I had a great experience with this app, fast and clean services. On time and on need
+                        They never fail to solve my issues</p>
+
+                    </div>
+
+                    <div class = "client">
+
+                        <div class = "clientCredentials">
+                            <img src="images/Client1.jpg" alt = "Client Photo"
+                                 width = "512" height = "512">
+                            <div class = "clientNameAndProfession">
+                                <h6>Client Name4</h6>
+                                <p>Profession</p>
+                                <div class = "ratings">
+                                    <label>☆</label>
+                                    <label>☆</label>
+                                    <label>☆</label>
+                                    <label>☆</label>
+                                    <label>☆</label>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <p>I had a great experience with this app, fast and clean services. On time and on need
+                           They never fail to solve my issues</p>
+
+                    </div>
+
+                    <div class = "client">
+
+                        <div class = "clientCredentials">
+                            <img src="images/Client1.jpg" alt = "Client Photo"
+                                 width = "512" height = "512">
+                            <div class = "clientNameAndProfession">
+                                <h6>Client Name5</h6>
+                                <p>Profession</p>
+                                <div class = "ratings">
+                                    <label>☆</label>
+                                    <label>☆</label>
+                                    <label>☆</label>
+                                    <label>☆</label>
+                                    <label>☆</label>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <p>I had a great experience with this app, fast and clean services. On time and on need
+                           They never fail to solve my issues</p>
+
+                    </div>
+
+                    <div class = "client">
+
+                        <div class = "clientCredentials">
+                            <img src="images/Client1.jpg" alt = "Client Photo"
+                                 width = "512" height = "512">
+                            <div class = "clientNameAndProfession">
+                                <h6>Client Name6</h6>
+                                <p>Profession</p>
+                                <div class = "ratings">
+                                    <label>☆</label>
+                                    <label>☆</label>
+                                    <label>☆</label>
+                                    <label>☆</label>
+                                    <label>☆</label>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <p>I had a great experience with this app, fast and clean services. On time and on need
+                           They never fail to solve my issues</p>
+
+                    </div>
+                </div>
+
+                <div class = "arrows">
+                    <button id = "left" onclick="buttonClick(2)"><i class="fa-solid fa-angle-left"></i></button>
+                    <button id = "right" onclick="buttonClick(1)"><i class="fa-solid fa-angle-right"></i></button>
+                </div>
+            </div>
+        </section>
+
+        <section class = "ContactUs animate" id = "Contact">
+            <div class = "ContactUsDiv">
+                <h2>Contact Us</h2>
+                <h1>Get In Touch!</h1>
+
+                <p>The contact form is currently inactive. Get a functional and working contact form with Ajax &
+                   PHP in a few minutes. Just copy and paste the files, add a little code and you're done.
+                   Download Now.
+                </p>
+
+                <form class = "contactForm">
+                    <div class = "nameAndEmail">
+                        <input type = "text" placeholder = "Your Name">
+                        <input type = "email" placeholder = "Your Email">
+                    </div>
+
+                    <input type = "text" placeholder = "Subject">
+                    <input style = "height: 8rem; white-space: nowrap;" type = "text" placeholder = "Your Message">
+
+                    <input type="submit" value="Send Message">
+                </form>
+            </div>
+        </section>
+
+        <section class = "footer">
+            <div class = "footerDiv">
+
+                <img src = "images/FooterLogo.svg" alt = "Mr Services mini logo for footer">
+
+                <div class = "bellowLogo">
+                    <p>Here goes some general text about the site to put in the footer</p>
+
+                    <div class = "middleRow">
+                        <a href = "#About">
+                            <button>About Us</button>
+                        </a>
+
+                        <a href = "#Contact">
+                            <button>Contact Us</button>
+                        </a>
+
+                        <a>
+                            <button>Privacy Policy</button>
+                        </a>
+
+                        <a>
+                            <button>Terms & Conditions</button>
+                        </a>
+
+                        <a>
+                            <button>Career</button>
+                        </a>
+                    </div>
+
+                    <div class = "rightRow">
+                        <a href = "https://maps.google.com/">
+                            <img src = "images/LocationMark.svg" alt = "Location Mark">
+                            <p>123 Street, New York, USA</p>
+                        </a>
+
+                        <a href = "tel:+012-345-67890">
+                            <img src = "images/Phone.svg" alt = "Phone">
+                            <p>+012-345-67890</p>
+                        </a>
+
+                        <a href = "mailto:info@example.com?subject = Feedback&body = Message">
+                            <img src = "images/Mail.svg" alt = "Mail Envelope">
+                            <p>info@example.com</p>
+                        </a>
+
+                        <div class = "socialMediaFooter">
+                            <ul class = "socialMediaIcons">
+                                <li><i class="fa-brands fa-linkedin"></i></li>
+                                <li><i class="fa-brands fa-instagram"></i></li>
+                                <li><i class="fa-brands fa-facebook-square"></i></li>
+                                <li><i class="fa-brands fa-youtube"></i></li>
+                                <li><i class="fa-brands fa-twitter-square"></i></li>
+                            </ul>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+
+            <footer></footer>
+
+        </section>
+
+        <!-- JS Files that need to be located here. -->
+        <script src = "js/reviews.js"></script>
+        <script src = "js/ShowPlans.js"></script>
+        <script src = "js/SearchFunction.js"></script>
+    </body>
+</html>
