@@ -117,16 +117,18 @@
                     <p>Here goes some text about the app and the website in general.
                        Click the search button below to start</p>
 
-                    <div class="searchBox">
+                    <form class="searchBox" onsubmit="return false">
 
-                        <input class="searchInput" type="text" name=""
+                        <input class="searchInput" type="text" id="searchItem" name=""
                                placeholder="Go on give it a go !">
 
-                           <button>
+                           <button onclick="search()">
+
+
                                <i class="fa fa-search"></i>
                            </button>
 
-                    </div>
+                    </form>
 
                 </div>
 
@@ -171,7 +173,7 @@
                 <h2>App Features</h2>
                 <h1>Awesome Features</h1>
 
-                <div class = "features animate">
+                <div class = "features">
 
                     <div>
                         <img src = "images/YellowEyeInFeatures.svg" alt = "Feature01 image">
@@ -214,7 +216,7 @@
 
         </section>
 
-        <section class = "Screenshot animate">
+        <section class = "Screenshot animate" id = "Screenshot">
 
             <div class = "ScreenshotTextDiv">
                 <h2>Screenshot</h2>
@@ -255,9 +257,9 @@
 
         </section>
 
-        <section class = "HowItWorks">
+        <section class = "HowItWorks animate" id = "HowItWorks">
 
-            <div class = "HowItWorksDiv animate">
+            <div class = "HowItWorksDiv">
 
                 <h2>How It Works</h2>
                 <h1>3 Easy Steps</h1>
@@ -309,7 +311,7 @@
 
         </section>
 
-        <section class = "Download animate">
+        <section class = "Download animate" id = "Download">
 
             <img src = "images/SignInScreenshot-DownloadSection.svg" alt = "Sign in screenshot from app"/>
 
@@ -790,7 +792,8 @@
         </section>
 
         <!-- JS Files that need to be located here. -->
-        <script src="js/reviews.js"></script>
-        <script src="js/ShowPlans.js"></script>
+        <script src = "js/reviews.js"></script>
+        <script src = "js/ShowPlans.js"></script>
+        <script src = "js/SearchFunction.js"></script>
     </body>
 </html>
