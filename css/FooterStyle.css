@@ -11,6 +11,7 @@ footer
 
 .footer
 {
+    margin-bottom       : -3rem;
     margin-top          : -14rem;
     background-color    : #F1F3F4;
     background-image    : url('../images/FooterPurpleWave.svg');
