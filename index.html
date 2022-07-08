@@ -6,7 +6,7 @@
         <meta charset = "UTF-8" />
         <meta name = "author" content = "Mr Services" />
         <meta name = "description" content = "Service brought to your home" />
-        <meta name = "viewport" content = "width = device - width, initial-scale = 0.1" /> 
+        <meta name = "viewport" content = "width = device - width, initial-scale = 1.0" /> 
 
         <link rel = "stylesheet"
               href = "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
@@ -718,11 +718,18 @@
 
                 <form class = "contactForm">
                     <div class = "nameAndEmail">
-                        <input type = "text" placeholder = "Your Name">
-                        <input type = "email" placeholder = "Your Email">
+                        <label for = "name" hidden></label>
+                        <input type = "text" placeholder = "Your Name"
+                               name = "name" id = "name" autocomplete = "name" required>
+
+                        <label for = "email" hidden></label>
+                        <input type = "email" placeholder = "Your Email"
+                               name = "email" id = "email" autocomplete = "name" required>
                     </div>
 
-                    <input type = "text" placeholder = "Subject">
+                    <label for = "subject" hidden></label>
+                    <input type = "text" placeholder = "Subject"
+                           name = "subject" id = "subject" required>
                     <input style = "height: 8rem; white-space: nowrap;" type = "text" placeholder = "Your Message">
 
                     <input type="submit" value="Send Message">
