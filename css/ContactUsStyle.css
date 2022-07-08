@@ -38,7 +38,7 @@ textarea
     border           : 1px solid #A9A9A9;
     border-radius    : 0.5rem;
     background-color : #FFFFFF;
-    outline          : none;
+    outline-width    : 0;
 }
 
 textarea
