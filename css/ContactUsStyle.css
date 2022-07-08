@@ -28,7 +28,8 @@
     height          : 25rem;
 }
 
-.contactForm input
+.contactForm input,
+textarea
 {
     width            : 97%;
     height           : 3.5rem;
@@ -37,9 +38,18 @@
     border           : 1px solid #A9A9A9;
     border-radius    : 0.5rem;
     background-color : #FFFFFF;
+    outline          : none;
 }
 
-.contactForm input::placeholder
+textarea
+{
+    height      : 10rem;
+    padding-top : 1rem;
+    resize      : none;
+}
+
+.contactForm input::placeholder,
+textarea::placeholder
 {
     font-family : 'Comfortaa', sans-serif;
     font-weight : 300;
