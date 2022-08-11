@@ -5,5 +5,8 @@
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="library" name="all" level="application" />
+    <orderEntry type="library" name="intl-tel-input" level="application" />
+    <orderEntry type="library" name="emailjs-com" level="application" />
+    <orderEntry type="library" name="main" level="application" />
   </component>
 </module>
