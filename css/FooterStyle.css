@@ -222,7 +222,6 @@ footer
     {
         width       : 65%;
         margin-left : 10rem;
-
     }
 }
 
@@ -272,7 +271,6 @@ footer
     {
         justify-content : space-between;
         width           : 115%;
-
     }
 
     .bellowLogo p:not(.rightRow p),
