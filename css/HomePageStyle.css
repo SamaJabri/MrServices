@@ -47,7 +47,7 @@ header .logo
     flex-direction  : row;
     justify-content : center;
     margin-top      : 0.6rem;
-    padding         : 0rem 0.4rem;
+    padding         : 0 0.4rem;
     list-style      : none;
 }
 
@@ -89,26 +89,26 @@ header .logo
     flex-direction : row;
     margin-top     : 2.2rem;
     margin-right   : 1rem;
-    padding        : 0rem 1rem;
+    padding        : 0 1rem;
     list-style     : none;
     font-size      : 1.2rem;
 }
 
-.socialMediaIcons li
+.socialMediaIcons a
 {
     margin-right : 0.5rem;
     margin-left  : 0.5rem;
+    color        : white;
 }
 
 .options li:hover .onHover
 {
     visibility : visible;
     opacity    : 1;
-
 }
 
 .options a:hover,
-.socialMediaIcons li:hover
+.socialMediaIcons a:hover
 {
     cursor      : pointer;
     transition  : all 0.2s;
@@ -392,7 +392,7 @@ section
     .section01Contents
     {
         margin-left : -15rem;
-        padding-top : 0rem;
+        padding-top : 0;
     }
 
     .searchBox
@@ -414,7 +414,7 @@ section
 
     .searchBox button
     {
-        margin-top  : 0rem;
+        margin-top  : 0;
         margin-left : -0.2rem;
     }
 
