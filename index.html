@@ -50,22 +50,10 @@
 
         <script src = "js/TransitionSections.js"></script>
 <!--        <script src = "ReviewsSlideShow.js"></script>-->
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.17.5/xlsx.min.js"></script>
 
     </head>
 
     <body>
-
-        <script src="js/Socials.js"></script>
-        <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js"></script>
-
-        <!-- Website Visits -->
-        <script async src="https://api.countapi.xyz/hit/samajabri.github.io/e4232e35-469e-4deb-89e4-3b265de8d67c?callback=websiteVisits"></script>
-        <script>
-            function websiteVisits(response) {
-                document.querySelector("#visits").textContent = response.value;
-            }
-        </script>
 
         <section class = "curve Intro">
 
@@ -104,7 +92,7 @@
                         </li>
                         <li>
                             <div class = "onHover"></div>
-                            <a>
+                            <a href = "#Review">
                                 Review
                             </a>
                         </li>
@@ -121,36 +109,11 @@
                     </label>
 
                     <ul class = "socialMediaIcons">
-                        <li>
-                            <a>
-                                <i class="fa-brands fa-linkedin"></i>
-                            </a>
-                        </li>
-
-                        <li>
-                            <a>
-                                <i class="fa-brands fa-instagram"></i>
-                            </a>
-                        </li>
-
-                        <li>
-                            <a href="https://www.facebook.com/Mr-Service-103940338888044"
-                            style="text-decoration: none;">
-                                <i class="fa-brands fa-facebook-square"></i>
-                            </a>
-                        </li>
-
-                        <li>
-                            <a>
-                                <i class="fa-brands fa-youtube"></i>
-                            </a>
-                        </li>
-
-                        <li>
-                            <a>
-                                <i class="fa-brands fa-twitter-square"></i>
-                            </a>
-                        </li>
+                        <li><i class="fa-brands fa-linkedin"></i></li>
+                        <li><i class="fa-brands fa-instagram"></i></li>
+                        <li><i class="fa-brands fa-facebook-square"></i></li>
+                        <li><i class="fa-brands fa-youtube"></i></li>
+                        <li><i class="fa-brands fa-twitter-square"></i></li>
                     </ul>
 
                 </nav>
@@ -194,13 +157,14 @@
                 <div class = "siteNumbers">
 
                     <div class = "activeInstalls">
-                        <h1 id="installs">5</h1>
+                        <h1>1234</h1>
                         <label>Active Install</label>
+
                     </div>
 
-                    <div class = "clientsReview" >
-                        <h1 id="visits"></h1>
-                        <label>Total Visits</label>
+                    <div class = "clientsReview">
+                        <h1>1234</h1>
+                        <label>Clients Reviews</label>
                     </div>
 
                 </div>
@@ -266,11 +230,11 @@
         <section class = "Screenshot animate">
 
             <div class = "ScreenshotTextDiv">
-<!--                <h2>Screenshot</h2>-->
+                <h2>Screenshot</h2>
                 <h1>User Friendly Interface and Very Easy-To-Use Order App</h1>
 
-<!--                <p>Some really long explanation about this UI being friendly and easy-to-use,-->
-<!--                it can be upto to 3 lines long. keep in mind it's accompanied with a pic for easier understanding</p>-->
+                <p>Some really long explanation about this UI being friendly and easy-to-use,
+                it can be upto to 3 lines long. keep in mind it's accompanied with a pic for easier understanding</p>
 
                 <ul>
                     <li><i class="fa fa-check" aria-hidden="true"></i>
@@ -284,7 +248,7 @@
                     </li>
                 </ul>
 
-<!--                <button class = "section04ReadMore">Read More</button>-->
+                <button class = "section04ReadMore">Read More</button>
             </div>
 
             <div class = "sidePic">
@@ -594,182 +558,161 @@
             </div>
         </section>
 
-<!--        <section class = "Testimonial animate" id = "Review">-->
-<!--            <div class = "TestimonialDiv">-->
-<!--                <h2>Testimonial</h2>-->
-<!--                <h1>All from social media</h1>-->
+        <section class = "Testimonial animate" id = "Review">
+            <div class = "TestimonialDiv">
+                <h2>Testimonial</h2>
+                <h1>All from social media</h1>
 
-<!--                <div class = "clients" id="clients">-->
+                <div class = "clients">
+                    <div class = "client">
 
-<!--                    <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fpermalink.php%3Fstory_fbid%3D119660710649340%26id%3D103940338888044%26substory_index%3D0&width=500&show_text=false&height=534&appId"-->
-<!--                             style="border:none;overflow:hidden" scrolling="no" frameborder="0"-->
-<!--                            allowfullscreen="true" class="client"-->
-<!--                            allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>-->
-
-<!--                    <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fpermalink.php%3Fstory_fbid%3D103942528887825%26id%3D103940338888044&show_text=true&width=500"-->
-<!--                             style="border:none;overflow:hidden" scrolling="no" frameborder="0"-->
-<!--                            allowfullscreen="true" class="client"-->
-<!--                            allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>-->
-
-<!--                    <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fpermalink.php%3Fstory_fbid%3D103942202221191%26id%3D103940338888044&show_text=true&width=500"-->
-<!--                            style="border:none;overflow:hidden" scrolling="no" frameborder="0"-->
-<!--                            allowfullscreen="true" class="client"-->
-<!--                            allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>-->
-
-<!--                    <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fpermalink.php%3Fstory_fbid%3D103942092221202%26id%3D103940338888044&show_text=true&width=500"-->
-<!--                            width="500" height="256" style="border:none;overflow:hidden" scrolling="no" frameborder="0"-->
-<!--                            allowfullscreen="true" class="client"-->
-<!--                            allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>-->
-
-<!--                    &lt;!&ndash;                    <div class = "client">&ndash;&gt;-->
-
-<!--&lt;!&ndash;                        <div class = "clientCredentials">&ndash;&gt;-->
-<!--&lt;!&ndash;                            <img src="images/Client1.jpg" alt = "Client Photo"&ndash;&gt;-->
-<!--&lt;!&ndash;                                 width = "512" height = "512">&ndash;&gt;-->
-<!--&lt;!&ndash;                            <div class = "clientNameAndProfession">&ndash;&gt;-->
-<!--&lt;!&ndash;                                <h6>Client Name1</h6>&ndash;&gt;-->
-<!--&lt;!&ndash;                                <p>Profession</p>&ndash;&gt;-->
-<!--&lt;!&ndash;                                <div class = "ratings">&ndash;&gt;-->
-<!--&lt;!&ndash;                                    <label>☆</label>&ndash;&gt;-->
-<!--&lt;!&ndash;                                    <label>☆</label>&ndash;&gt;-->
-<!--&lt;!&ndash;                                    <label>☆</label>&ndash;&gt;-->
-<!--&lt;!&ndash;                                    <label>☆</label>&ndash;&gt;-->
-<!--&lt;!&ndash;                                    <label>☆</label>&ndash;&gt;-->
-<!--&lt;!&ndash;                                </div>&ndash;&gt;-->
-<!--&lt;!&ndash;                            </div>&ndash;&gt;-->
-<!--&lt;!&ndash;                        </div>&ndash;&gt;-->
+                        <div class = "clientCredentials">
+                            <img src="images/Client1.jpg" alt = "Client Photo"
+                                 width = "512" height = "512">
+                            <div class = "clientNameAndProfession">
+                                <h6>Client Name1</h6>
+                                <p>Profession</p>
+                                <div class = "ratings">
+                                    <label>☆</label>
+                                    <label>☆</label>
+                                    <label>☆</label>
+                                    <label>☆</label>
+                                    <label>☆</label>
+                                </div>
+                            </div>
+                        </div>
 
 
-<!--&lt;!&ndash;                        <p>I had a great experience with this app, fast and clean services. On time and on need&ndash;&gt;-->
-<!--&lt;!&ndash;                        They never fail to solve my issues</p>&ndash;&gt;-->
+                        <p>I had a great experience with this app, fast and clean services. On time and on need
+                        They never fail to solve my issues</p>
 
-<!--&lt;!&ndash;                    </div>&ndash;&gt;-->
+                    </div>
 
-<!--&lt;!&ndash;                    <div class = "client">&ndash;&gt;-->
+                    <div class = "client">
 
-<!--&lt;!&ndash;                        <div class = "clientCredentials">&ndash;&gt;-->
-<!--&lt;!&ndash;                            <img src="images/Client2.jpg" alt = "Client Photo">&ndash;&gt;-->
-<!--&lt;!&ndash;                            <div class = "clientNameAndProfession">&ndash;&gt;-->
-<!--&lt;!&ndash;                                <h6>Client Name2</h6>&ndash;&gt;-->
-<!--&lt;!&ndash;                                <p>Profession</p>&ndash;&gt;-->
-<!--&lt;!&ndash;                                <div class = "ratings">&ndash;&gt;-->
-<!--&lt;!&ndash;                                    <label>☆</label>&ndash;&gt;-->
-<!--&lt;!&ndash;                                    <label>☆</label>&ndash;&gt;-->
-<!--&lt;!&ndash;                                    <label>☆</label>&ndash;&gt;-->
-<!--&lt;!&ndash;                                    <label>☆</label>&ndash;&gt;-->
-<!--&lt;!&ndash;                                    <label>☆</label>&ndash;&gt;-->
-<!--&lt;!&ndash;                                </div>&ndash;&gt;-->
-<!--&lt;!&ndash;                            </div>&ndash;&gt;-->
-<!--&lt;!&ndash;                        </div>&ndash;&gt;-->
-
-
-<!--&lt;!&ndash;                        <p>I had a great experience with this app, fast and clean services. On time and on need&ndash;&gt;-->
-<!--&lt;!&ndash;                        They never fail to solve my issues</p>&ndash;&gt;-->
-
-<!--&lt;!&ndash;                    </div>&ndash;&gt;-->
-
-<!--&lt;!&ndash;                    <div class = "client">&ndash;&gt;-->
-
-<!--&lt;!&ndash;                        <div class = "clientCredentials">&ndash;&gt;-->
-<!--&lt;!&ndash;                            <img src="images/User.svg.png" alt = "Client Photo">&ndash;&gt;-->
-<!--&lt;!&ndash;                            <div class = "clientNameAndProfession">&ndash;&gt;-->
-<!--&lt;!&ndash;                                <h6>Client Name3</h6>&ndash;&gt;-->
-<!--&lt;!&ndash;                                <p>Profession</p>&ndash;&gt;-->
-<!--&lt;!&ndash;                                <div class = "ratings">&ndash;&gt;-->
-<!--&lt;!&ndash;                                    <label>☆</label>&ndash;&gt;-->
-<!--&lt;!&ndash;                                    <label>☆</label>&ndash;&gt;-->
-<!--&lt;!&ndash;                                    <label>☆</label>&ndash;&gt;-->
-<!--&lt;!&ndash;                                    <label>☆</label>&ndash;&gt;-->
-<!--&lt;!&ndash;                                    <label>☆</label>&ndash;&gt;-->
-<!--&lt;!&ndash;                                </div>&ndash;&gt;-->
-<!--&lt;!&ndash;                            </div>&ndash;&gt;-->
-<!--&lt;!&ndash;                        </div>&ndash;&gt;-->
+                        <div class = "clientCredentials">
+                            <img src="images/Client2.jpg" alt = "Client Photo">
+                            <div class = "clientNameAndProfession">
+                                <h6>Client Name2</h6>
+                                <p>Profession</p>
+                                <div class = "ratings">
+                                    <label>☆</label>
+                                    <label>☆</label>
+                                    <label>☆</label>
+                                    <label>☆</label>
+                                    <label>☆</label>
+                                </div>
+                            </div>
+                        </div>
 
 
-<!--&lt;!&ndash;                        <p>I had a great experience with this app, fast and clean services. On time and on need&ndash;&gt;-->
-<!--&lt;!&ndash;                        They never fail to solve my issues</p>&ndash;&gt;-->
+                        <p>I had a great experience with this app, fast and clean services. On time and on need
+                        They never fail to solve my issues</p>
 
-<!--&lt;!&ndash;                    </div>&ndash;&gt;-->
+                    </div>
 
-<!--&lt;!&ndash;                    <div class = "client">&ndash;&gt;-->
+                    <div class = "client">
 
-<!--&lt;!&ndash;                        <div class = "clientCredentials">&ndash;&gt;-->
-<!--&lt;!&ndash;                            <img src="images/Client1.jpg" alt = "Client Photo"&ndash;&gt;-->
-<!--&lt;!&ndash;                                 width = "512" height = "512">&ndash;&gt;-->
-<!--&lt;!&ndash;                            <div class = "clientNameAndProfession">&ndash;&gt;-->
-<!--&lt;!&ndash;                                <h6>Client Name4</h6>&ndash;&gt;-->
-<!--&lt;!&ndash;                                <p>Profession</p>&ndash;&gt;-->
-<!--&lt;!&ndash;                                <div class = "ratings">&ndash;&gt;-->
-<!--&lt;!&ndash;                                    <label>☆</label>&ndash;&gt;-->
-<!--&lt;!&ndash;                                    <label>☆</label>&ndash;&gt;-->
-<!--&lt;!&ndash;                                    <label>☆</label>&ndash;&gt;-->
-<!--&lt;!&ndash;                                    <label>☆</label>&ndash;&gt;-->
-<!--&lt;!&ndash;                                    <label>☆</label>&ndash;&gt;-->
-<!--&lt;!&ndash;                                </div>&ndash;&gt;-->
-<!--&lt;!&ndash;                            </div>&ndash;&gt;-->
-<!--&lt;!&ndash;                        </div>&ndash;&gt;-->
-
-
-<!--&lt;!&ndash;                        <p>I had a great experience with this app, fast and clean services. On time and on need&ndash;&gt;-->
-<!--&lt;!&ndash;                           They never fail to solve my issues</p>&ndash;&gt;-->
-
-<!--&lt;!&ndash;                    </div>&ndash;&gt;-->
-
-<!--&lt;!&ndash;                    <div class = "client">&ndash;&gt;-->
-
-<!--&lt;!&ndash;                        <div class = "clientCredentials">&ndash;&gt;-->
-<!--&lt;!&ndash;                            <img src="images/Client1.jpg" alt = "Client Photo"&ndash;&gt;-->
-<!--&lt;!&ndash;                                 width = "512" height = "512">&ndash;&gt;-->
-<!--&lt;!&ndash;                            <div class = "clientNameAndProfession">&ndash;&gt;-->
-<!--&lt;!&ndash;                                <h6>Client Name5</h6>&ndash;&gt;-->
-<!--&lt;!&ndash;                                <p>Profession</p>&ndash;&gt;-->
-<!--&lt;!&ndash;                                <div class = "ratings">&ndash;&gt;-->
-<!--&lt;!&ndash;                                    <label>☆</label>&ndash;&gt;-->
-<!--&lt;!&ndash;                                    <label>☆</label>&ndash;&gt;-->
-<!--&lt;!&ndash;                                    <label>☆</label>&ndash;&gt;-->
-<!--&lt;!&ndash;                                    <label>☆</label>&ndash;&gt;-->
-<!--&lt;!&ndash;                                    <label>☆</label>&ndash;&gt;-->
-<!--&lt;!&ndash;                                </div>&ndash;&gt;-->
-<!--&lt;!&ndash;                            </div>&ndash;&gt;-->
-<!--&lt;!&ndash;                        </div>&ndash;&gt;-->
+                        <div class = "clientCredentials">
+                            <img src="images/User.svg.png" alt = "Client Photo">
+                            <div class = "clientNameAndProfession">
+                                <h6>Client Name3</h6>
+                                <p>Profession</p>
+                                <div class = "ratings">
+                                    <label>☆</label>
+                                    <label>☆</label>
+                                    <label>☆</label>
+                                    <label>☆</label>
+                                    <label>☆</label>
+                                </div>
+                            </div>
+                        </div>
 
 
-<!--&lt;!&ndash;                        <p>I had a great experience with this app, fast and clean services. On time and on need&ndash;&gt;-->
-<!--&lt;!&ndash;                           They never fail to solve my issues</p>&ndash;&gt;-->
+                        <p>I had a great experience with this app, fast and clean services. On time and on need
+                        They never fail to solve my issues</p>
 
-<!--&lt;!&ndash;                    </div>&ndash;&gt;-->
+                    </div>
 
-<!--&lt;!&ndash;                    <div class = "client">&ndash;&gt;-->
+                    <div class = "client">
 
-<!--&lt;!&ndash;                        <div class = "clientCredentials">&ndash;&gt;-->
-<!--&lt;!&ndash;                            <img src="images/Client1.jpg" alt = "Client Photo"&ndash;&gt;-->
-<!--&lt;!&ndash;                                 width = "512" height = "512">&ndash;&gt;-->
-<!--&lt;!&ndash;                            <div class = "clientNameAndProfession">&ndash;&gt;-->
-<!--&lt;!&ndash;                                <h6>Client Name6</h6>&ndash;&gt;-->
-<!--&lt;!&ndash;                                <p>Profession</p>&ndash;&gt;-->
-<!--&lt;!&ndash;                                <div class = "ratings">&ndash;&gt;-->
-<!--&lt;!&ndash;                                    <label>☆</label>&ndash;&gt;-->
-<!--&lt;!&ndash;                                    <label>☆</label>&ndash;&gt;-->
-<!--&lt;!&ndash;                                    <label>☆</label>&ndash;&gt;-->
-<!--&lt;!&ndash;                                    <label>☆</label>&ndash;&gt;-->
-<!--&lt;!&ndash;                                    <label>☆</label>&ndash;&gt;-->
-<!--&lt;!&ndash;                                </div>&ndash;&gt;-->
-<!--&lt;!&ndash;                            </div>&ndash;&gt;-->
-<!--&lt;!&ndash;                        </div>&ndash;&gt;-->
+                        <div class = "clientCredentials">
+                            <img src="images/Client1.jpg" alt = "Client Photo"
+                                 width = "512" height = "512">
+                            <div class = "clientNameAndProfession">
+                                <h6>Client Name4</h6>
+                                <p>Profession</p>
+                                <div class = "ratings">
+                                    <label>☆</label>
+                                    <label>☆</label>
+                                    <label>☆</label>
+                                    <label>☆</label>
+                                    <label>☆</label>
+                                </div>
+                            </div>
+                        </div>
 
 
-<!--&lt;!&ndash;                        <p>I had a great experience with this app, fast and clean services. On time and on need&ndash;&gt;-->
-<!--&lt;!&ndash;                           They never fail to solve my issues</p>&ndash;&gt;-->
+                        <p>I had a great experience with this app, fast and clean services. On time and on need
+                           They never fail to solve my issues</p>
 
-<!--&lt;!&ndash;                    </div>&ndash;&gt;-->
-<!--                </div>-->
+                    </div>
 
-<!--                <div class = "arrows">-->
-<!--                    <button id = "left" onclick="buttonClick(2)"><i class="fa-solid fa-angle-left"></i></button>-->
-<!--                    <button id = "right" onclick="buttonClick(1)"><i class="fa-solid fa-angle-right"></i></button>-->
-<!--                </div>-->
-<!--            </div>-->
-<!--        </section>-->
+                    <div class = "client">
+
+                        <div class = "clientCredentials">
+                            <img src="images/Client1.jpg" alt = "Client Photo"
+                                 width = "512" height = "512">
+                            <div class = "clientNameAndProfession">
+                                <h6>Client Name5</h6>
+                                <p>Profession</p>
+                                <div class = "ratings">
+                                    <label>☆</label>
+                                    <label>☆</label>
+                                    <label>☆</label>
+                                    <label>☆</label>
+                                    <label>☆</label>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <p>I had a great experience with this app, fast and clean services. On time and on need
+                           They never fail to solve my issues</p>
+
+                    </div>
+
+                    <div class = "client">
+
+                        <div class = "clientCredentials">
+                            <img src="images/Client1.jpg" alt = "Client Photo"
+                                 width = "512" height = "512">
+                            <div class = "clientNameAndProfession">
+                                <h6>Client Name6</h6>
+                                <p>Profession</p>
+                                <div class = "ratings">
+                                    <label>☆</label>
+                                    <label>☆</label>
+                                    <label>☆</label>
+                                    <label>☆</label>
+                                    <label>☆</label>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <p>I had a great experience with this app, fast and clean services. On time and on need
+                           They never fail to solve my issues</p>
+
+                    </div>
+                </div>
+
+                <div class = "arrows">
+                    <button id = "left" onclick="buttonClick(2)"><i class="fa-solid fa-angle-left"></i></button>
+                    <button id = "right" onclick="buttonClick(1)"><i class="fa-solid fa-angle-right"></i></button>
+                </div>
+            </div>
+        </section>
 
         <section class = "ContactUs animate" id = "Contact">
             <div class = "ContactUsDiv">
@@ -839,7 +782,7 @@
                         <a>
                             <button id="privacyAndPolicyButton">Privacy Policy</button>
 
-                            <!-- Popup Screen For Privacy and Policy -->
+                            <!-- Popup Screen For Privacy Policy -->
                             <div class = "privacyAndPolicy" id = "privacyAndPolicy">
 
                                 <span class = "helper"></span>
@@ -853,9 +796,7 @@
                                         >
                                         </iframe>
                                     </div>
-
                                 </div>
-
                             </div>
                         </a>
 
@@ -876,22 +817,16 @@
                                         >
                                         </iframe>
                                     </div>
-
                                 </div>
-
                             </div>
-
                         </a>
 
                     </div>
 
                     <div class = "rightRow">
-                        <a href = "https://www.google.com/maps/place/G%C3%BCm%C3%BC%C5%9Fpala,
-                        +%C4%B0ske%C3%A7e+Cd.,+Avc%C4%B1lar%2F%C4%B0stanbul/@40.9835977,
-                        28.7388995,17z/data=!3m1!4b1!4m5!3m4!1s0x14caa1a1ada6253b:0x90a101a41d5d0c28!8m2!3d40.
-                        9835977!4d28.7410882">
+                        <a href = "https://maps.google.com/">
                             <img src = "images/LocationMark.svg" alt = "Location Mark">
-                            <p>Gümüşpala Mah., Avcılar / Istanbul</p>
+                            <p>123 Street, New York, USA</p>
                         </a>
 
                         <a href = "tel:+90-555-141-43-31">
@@ -906,36 +841,11 @@
 
                         <div class = "socialMediaFooter">
                             <ul class = "socialMediaIcons">
-                                <li>
-                                    <a>
-                                        <i class="fa-brands fa-linkedin"></i>
-                                    </a>
-                                </li>
-
-                                <li>
-                                    <a>
-                                        <i class="fa-brands fa-instagram"></i>
-                                    </a>
-                                </li>
-
-                                <li>
-                                    <a href="https://www.facebook.com/Mr-Service-103940338888044"
-                                       style="text-decoration: none;">
-                                        <i class="fa-brands fa-facebook-square"></i>
-                                    </a>
-                                </li>
-
-                                <li>
-                                    <a>
-                                        <i class="fa-brands fa-youtube"></i>
-                                    </a>
-                                </li>
-
-                                <li>
-                                    <a>
-                                        <i class="fa-brands fa-twitter-square"></i>
-                                    </a>
-                                </li>
+                                <li><i class="fa-brands fa-linkedin"></i></li>
+                                <li><i class="fa-brands fa-instagram"></i></li>
+                                <li><i class="fa-brands fa-facebook-square"></i></li>
+                                <li><i class="fa-brands fa-youtube"></i></li>
+                                <li><i class="fa-brands fa-twitter-square"></i></li>
                             </ul>
                         </div>
 
@@ -949,20 +859,16 @@
         </section>
 
         <!-- JS Files that need to be located here. -->
+        
+        <script type="text/javascript"
+                src="https://cdn.jsdelivr.net/npm/emailjs-com@2.4.0/dist/email.min.js">
+        </script>
+        
         <script type="text/javascript" src="js/reviews.js"></script>
         <script type="text/javascript" src="js/ShowPlans.js"></script>
         <script type="text/javascript" src="js/PhoneNumber.js"></script>
-<!--        <script type="text/javascript" src="js/ShowPopups.js" ></script>-->
-<!--        <script src="js/bundle.js"></script>-->
-        <script type="text/javascript" src="js/Installations.js"></script>
-
-        <script type="text/javascript"
-                src="https://cdn.jsdelivr.net/npm/emailjs-com@2.4.0/dist/email.min.js">
-
-        </script>
-
         <script type="text/javascript" src="js/ContactForm.js"></script>
-
+        <script type="text/javascript" src="js/ShowPopups.js" ></script>
 
     </body>
 </html>
