@@ -33,7 +33,7 @@
     display               : grid;
     justify-content       : center;
     grid-template-columns : 28% 28% 28%;
-    grid-auto-rows        : calc(49%);
+    grid-auto-rows        : 1fr;
     grid-gap              : 2rem;
 }
 
@@ -79,7 +79,7 @@
 {
     .features
     {
-        grid-template-columns : 53% 53%;
+        grid-template-columns : 43% 43%;
         grid-template-rows    : 38% 38% 38%;
         column-gap            : 4rem;
         row-gap               : 2rem;
@@ -92,7 +92,7 @@
     {
         grid-auto-columns     : auto;
         grid-template-columns : calc(90%);
-        grid-template-rows    : calc(15%);
+        grid-template-rows    : 1fr;
         grid-auto-rows        : auto;
     }
     .featuresDiv h1

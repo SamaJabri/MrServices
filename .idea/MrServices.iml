@@ -8,5 +8,8 @@
     <orderEntry type="library" name="intl-tel-input" level="application" />
     <orderEntry type="library" name="emailjs-com" level="application" />
     <orderEntry type="library" name="main" level="application" />
+    <orderEntry type="library" name="sdk" level="application" />
+    <orderEntry type="library" name="require" level="application" />
+    <orderEntry type="library" name="xlsx" level="application" />
   </component>
 </module>

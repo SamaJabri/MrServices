@@ -1,0 +1,97 @@
+*
+{
+    font-family             : 'Microsoft JhengHei', sans-serif;
+    -webkit-font-smoothing  : antialiased;
+    -moz-osx-font-smoothing : grayscale;
+}
+
+code
+{
+    font-family : source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+*
+{
+    box-sizing : border-box;
+    margin     : 0;
+    padding    : 0;
+}
+
+:root
+{
+    --purple      : #2E3191;
+    --dark-purple : #121351;
+    --black       : #343434;
+    --yellow      : #FFCA05;
+    --grey        : #B1B1B1;
+    --white       : #F1F3F4;
+}
+
+body
+{
+    overflow-x : hidden;
+}
+
+a
+{
+    text-decoration : none;
+}
+
+button,
+input,
+textarea
+{
+    outline : none;
+}
+
+textarea
+{
+    resize : vertical;
+}
+
+ul
+{
+    list-style : none;
+}
+
+.flex-col
+{
+    display        : flex;
+    flex-direction : column;
+}
+
+.flex
+{
+    display : flex;
+}
+
+.justify-center
+{
+    justify-content : center;
+}
+
+.items-center
+{
+    align-items : center;
+}
+
+.bg-purple
+{
+    background-color : var(--purple);
+}
+
+.purple
+{
+    color : var(--purple);
+}
+
+.r-02
+{
+    border-radius : 0.2rem;
+}
+
+.r-3
+{
+    border-radius : 3rem;
+}

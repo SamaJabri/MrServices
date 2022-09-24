@@ -7,6 +7,10 @@ function showOnlyThree(x) {
     let w = window.innerWidth;
     console.log(w);
 
+    window.onresize = () => {
+        w = window.innerWidth;
+    }
+
     let i = x;
     while(i <= reviews.length){
 

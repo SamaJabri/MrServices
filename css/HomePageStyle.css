@@ -5,9 +5,10 @@
 
 body
 {
-    width  : 100%;
-    margin : 0;
-    color  : white;
+    overflow-x : hidden;
+    width      : 100%;
+    margin     : 0;
+    color      : white;
 }
 
 header
@@ -201,15 +202,16 @@ header .logo
 
 .searchInput
 {
-    float       : right;
-    width       : 22.5rem;
-    padding     : 0 6px;
-    font-size   : 16px;
-    line-height : 40px;
-    color       : white;
-    border      : none;
-    outline     : none;
-    background  : none;
+    float         : right;
+    width         : 22.5rem;
+    padding       : 0 6px;
+    font-size     : 16px;
+    line-height   : 40px;
+    color         : white;
+    border        : none;
+    border-radius : 30px;
+    outline       : none;
+    background    : none;
 }
 
 .searchInput::placeholder
@@ -218,6 +220,12 @@ header .logo
     font-weight : 500;
     line-height : 80px;
     color       : #FFCA05;
+}
+
+.searchInput:focus
+{
+    border-radius : 30px;
+    background    : none;
 }
 
 .searchInput:focus::placeholder
@@ -359,7 +367,7 @@ section
         color      : black;
     }
 
-    .socialMediaIcons
+    .socialMediaIcons:not(.socialMediaFooter .socialMediaIcons)
     {
         display : none;
     }

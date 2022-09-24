@@ -1,0 +1,730 @@
+@import 'general.css';
+
+/* Navbar */
+.navbar
+{
+    position   : fixed;
+    width      : 16rem;
+    height     : 100vh;
+    min-height : 100vh;
+    transition : opacity 0.3s, width 0.4s;
+    color      : white;
+    box-shadow : 0 0 16px 0 #2E319117;
+}
+
+.navbar__close-button
+{
+    position   : absolute;
+    top        : 10px;
+    right      : 10px;
+    font-size  : 1.5rem;
+    color      : var(--dark-purple);
+    border     : none;
+    background : none;
+}
+
+.navbar__close-button:hover
+{
+    cursor : pointer;
+    color  : var(--purple);
+}
+
+.navbar__upper-part
+{
+    width       : 100%;
+    margin-top  : 2.5rem;
+    margin-lefT : -1.5rem;
+}
+
+/*.navbar__upper-part__user {*/
+/*  position: absolute;*/
+/*  left: 30%;*/
+/*  top: 75%;*/
+/*}*/
+
+.navbar__upper-part img
+{
+    width        : 3rem;
+    height       : 3rem;
+    margin-right : 1rem;
+    margin-left  : -1rem;
+    padding      : 0.3rem;
+    background   : var(--purple);
+}
+
+.navbar__lower-part
+{
+    align-items     : start;
+    justify-content : space-around;
+    height          : 65%;
+    margin-top      : 4rem;
+}
+
+.navbar__lower-part li,
+.normalLink
+{
+    width       : 100%;
+    margin-top  : 0.2rem;
+    padding     : 0.5rem 0 0.5rem 1rem;
+    transition  : background-color 0.3s;
+    font-size   : 1.3rem;
+    font-weight : 600;
+    color       : var(--purple);
+}
+
+.normalLink:active
+{
+    color : var(--dark-purple);
+}
+
+.navbar__lower-part li:hover, .activeLink
+{
+    cursor           : pointer;
+    border-right     : 4px solid var(--purple);
+    background-color : var(--white);
+}
+
+.navbar__lower-part span
+{
+    display     : inline-flex;
+    margin      : 0 1.5rem;
+    margin-left : 0;
+    color       : var(--dark-purple);
+}
+
+/* Header */
+.header-div
+{
+    width : 100%;
+}
+
+.header
+{
+    position        : relative;
+    justify-content : space-between;
+    height          : 5rem;
+    padding         : 0 1rem;
+    box-shadow      : 0 24px 3px -23px var(--white);
+}
+
+.header__buttons
+{
+    position   : relative;
+    padding    : 0.5rem;
+    font-size  : 1.3rem;
+    color      : var(--dark-purple);
+    border     : none;
+    background : none;
+}
+
+.header__buttons:hover
+{
+    cursor : pointer;
+    color  : var(--purple);
+}
+
+.header__user
+{
+    position : relative;
+    gap      : 1rem;
+
+}
+
+.header__user:hover
+{
+    cursor : pointer;
+}
+
+.header__user img
+{
+    width            : 3rem;
+    height           : 3rem;
+    padding          : 0.3rem;
+    background-color : var(--purple);
+}
+
+.header__right
+{
+    justify-content : space-around;
+    width           : 10%;
+    height          : 100%;
+}
+
+/* User Profile */
+.user-profile-div
+{
+}
+
+.user-profile-div
+{
+    position         : absolute;
+    z-index          : 10;
+    top              : 4.5rem;
+    right            : 0;
+    justify-content  : space-around;
+    width            : 15rem;
+    height           : 10rem;
+    padding          : 0.5rem 1rem;
+    border           : 1px solid var(--white);
+    background-color : white;
+}
+
+.user-profile-div button
+{
+    padding       : 0.4rem;
+    font-size     : 1.1rem;
+    color         : var(--grey);
+    border        : none;
+    border-top    : 1px solid var(--grey);
+    border-bottom : 1px solid var(--grey);
+    background    : none;
+}
+
+.user-profile-div button:hover
+{
+    cursor           : pointer;
+    color            : white;
+    background-color : var(--grey);
+}
+
+/* Section one */
+.section-one,
+.about,
+.features,
+.how-it-works,
+.download
+{
+    align-items     : start;
+    justify-content : start;
+    height          : calc(100vh - 5rem);
+    margin-left     : 16rem;
+}
+
+.title
+{
+    margin : 4rem 0 4rem 4.5rem;
+}
+
+.section-one > div,
+.about > div,
+.features > div,
+.features-list > div,
+.how-it-works > div,
+.how-it-works-steps > div,
+.download > div
+{
+    width : 100%;
+}
+
+.section-one input,
+.section-one textarea,
+.about input,
+.about textarea,
+.features input,
+.features textarea,
+.features-list input,
+.features-list textarea,
+.how-it-works input,
+.how-it-works textarea,
+.how-it-works-steps input,
+.how-it-works-steps textarea,
+.download input,
+.download textarea,
+.login-form input
+{
+    height        : 3rem;
+    min-height    : 3rem;
+    margin-top    : 0.3rem;
+    margin-bottom : 1rem;
+    padding       : 0.5rem;
+    font-size     : 1rem;
+    border        : 1px solid var(--white);
+    border-radius : 0.3rem;
+}
+
+.section-one label,
+.about label,
+.features label,
+.features-list label,
+.how-it-works label,
+.how-it-works-steps label,
+.download label,
+.login-form label
+{
+    font-size : 1.3rem;
+}
+
+.forms,
+.feature-form
+{
+    justify-content : space-around;
+}
+
+.form,
+.currentInfo
+{
+    width          : 38%;
+    padding-bottom : 2rem;
+}
+
+.image-div
+{
+    margin-bottom : 2rem;
+}
+
+.image-buttons
+{
+    align-items     : center;
+    justify-content : space-between;
+}
+
+.image-buttons .form-submit
+{
+    margin-top : 0;
+}
+
+.image
+{
+    width         : 100%;
+    height        : 20rem;
+    margin-bottom : 1rem;
+    box-shadow    : 0 0 4px 4px rgba(0, 0, 0, 0.2);
+}
+
+.choose-image
+{
+    width   : fit-content;
+    padding : 0.5rem 2rem;
+    border  : 1px solid var(--purple);
+}
+
+.choose-image:hover
+{
+    cursor           : pointer;
+    background-color : var(--white);
+}
+
+/* Current form styling */
+.currentHeader
+{
+    margin-top    : 1rem;
+    margin-bottom : 1rem;
+}
+
+.currentDescription
+{
+    margin-bottom : 2rem;
+    color         : var(--grey);
+}
+
+.currentSubHeader
+{
+    margin-bottom : 1rem;
+    color         : var(--black);
+}
+
+.currentInfo
+{
+    min-width        : 35rem;
+    max-width        : 38rem;
+    height           : fit-content;
+    margin-top       : -4.5rem;
+    padding          : 1rem;
+    background-color : var(--white);
+    line-break       : auto;
+}
+
+.currentInfo > h1:first-child
+{
+    padding-bottom : 1rem;
+    color          : var(--grey);
+}
+
+.showOnWebsite
+{
+    margin-top : 3rem;
+    text-align : right;
+    color      : var(--purple);
+}
+
+.showOnWebsite:active
+{
+    color : var(--dark-purple);
+}
+
+.form-submit
+{
+    margin-top       : 1rem;
+    padding          : 0.5rem 2rem;
+    font-size        : 1.3rem;
+    color            : white;
+    border           : none;
+    background-color : var(--purple);
+}
+
+.form-submit:hover
+{
+    cursor           : pointer;
+    background-color : var(--dark-purple);
+}
+
+/* About Details Page */
+.forms
+{
+    position : relative;
+}
+
+.aboutDetailsButton
+{
+    position : absolute;
+    right    : 6rem;
+    bottom   : -2rem;
+}
+
+.updateFieldButton
+{
+    position : absolute;
+    top      : 20rem;
+    right    : 6rem;
+}
+
+/* Features list */
+.features-list,
+.how-it-works-steps,
+.pricing-plans-monthly,
+.pricing-plans-yearly,
+.price-card-list
+{
+    position   : relative;
+    margin-top : 2rem;
+    gap        : 1.3rem;
+}
+
+.price-card-list
+{
+    display : none;
+}
+
+.feature-form,
+.price-card-form
+{
+    position      : relative;
+    align-items   : center;
+    margin-top    : 0;
+    margin-bottom : -3.5rem;
+    transition    : margin-top 2s;
+}
+
+.feature-form
+{
+    display : none;
+}
+
+.price-card-form
+{
+    justify-content : space-around;
+}
+
+.delete-feature
+{
+    position   : absolute;
+    top        : -2rem;
+    right      : 5rem;
+    width      : 3rem;
+    height     : 3rem;
+    font-size  : 2.3rem;
+    border     : none;
+    background : none;
+}
+
+.delete-feature:hover,
+.delete-list-item:hover
+{
+    cursor : pointer;
+    color  : var(--dark-purple)
+}
+
+.feature-form .currentDescription,
+.price-card-form .currentDescription
+{
+    margin-top    : 1rem;
+    margin-bottom : -0.4rem;
+    font-size     : 1.3rem;
+    color         : var(--black);
+}
+
+.price-card-form .currentDescription
+{
+    margin-top    : 0;
+    margin-bottom : 2rem;
+}
+
+.price-card-form .currentCurrency
+{
+    font-size : 1.3rem;
+}
+
+.feature
+{
+    width         : 95%;
+    margin        : 0 3rem;
+    padding       : 1rem;
+    font-size     : 2rem;
+    text-align    : left;
+    color         : var(--purple);
+    border        : none;
+    border-bottom : 1px solid var(--purple);
+    background    : none;
+}
+
+.feature:hover
+{
+    cursor           : pointer;
+    background-color : var(--white);
+}
+
+/* Popup delete form */
+/* Delete Popup Screen */
+
+.delete-popup
+{
+    position        : fixed;
+    z-index         : 100;
+    top             : 0;
+    left            : 0;
+    display         : none;
+    overflow        : auto;
+    align-items     : center;
+    justify-content : center;
+    width           : 100%;
+    height          : 100%;
+    cursor          : pointer;
+    text-align      : center;
+    background      : rgba(18, 19, 81, 0.4);
+}
+
+.delete-popup .helper
+{
+    display        : inline-block;
+    height         : 100%;
+    vertical-align : middle;
+}
+
+.delete-popup > div
+{
+    position         : relative;
+    display          : inline-block;
+    width            : 60%;
+    height           : auto;
+    min-height       : 10rem;
+    max-height       : 20rem;
+    padding          : 15px 5%;
+    vertical-align   : middle;
+    border-radius    : 20px;
+    background-color : var(--white);
+    box-shadow       : 0 0 40px var(--grey);
+}
+
+.delete-popup .close-button
+{
+    position         : absolute;
+    top              : -20px;
+    right            : -20px;
+    left             : -10px;
+    display          : inline-block;
+    width            : 30px;
+    height           : 30px;
+    cursor           : pointer;
+    font-family      : Arial, serif;
+    font-size        : 25px;
+    font-weight      : bold;
+    font-style       : italic;
+    line-height      : 30px;
+    text-align       : center;
+    color            : var(--purple);
+    border-radius    : 50px;
+    background-color : var(--white);
+    box-shadow       : 4px 4px 14px 0 var(--grey);
+}
+
+.close-button:hover
+{
+    background-color : var(--grey);
+}
+
+.trigger
+{
+    margin      : 20px;
+    cursor      : pointer;
+    font-size   : 20px;
+    font-weight : bold;
+}
+
+.delete-popup p
+{
+    font-size  : 1.8rem;
+    font-style : italic;
+    color      : var(--dark-purple);
+}
+
+.delete-popup .form-submit
+{
+    margin-top : 2rem;
+}
+
+/* Download Page */
+.currentDownloadLink
+{
+    margin-top : 1rem;
+    color      : var(--dark-purple);
+}
+
+.currentDownloadLink:hover
+{
+    cursor : pointer;
+    color  : var(--purple);
+}
+
+/* Pricing Plan */
+.switch-plans-buttons
+{
+    justify-content : space-around;
+    margin-top      : 2rem;
+    padding-top     : 2rem;
+    border-top      : 1px solid var(--purple);
+}
+
+.switch-plans-buttons button:focus
+{
+    background-color : #6267DB;
+}
+
+.pricing-plans-monthly
+{
+    display : none;
+}
+
+.pricing-plans-yearly
+{
+    display : none;
+}
+
+label.coming-soon
+{
+    position        : relative;
+    top             : -6rem;
+    left            : 33rem;
+    display         : flex;
+    align-items     : center;
+    justify-content : center;
+    width           : 20rem;
+    height          : 2.5rem;
+    font-size       : 1.5rem;
+    color           : #2C3181;
+}
+
+.coming-soon input
+{
+    width   : 0;
+    height  : 0;
+    opacity : 0;
+}
+
+.coming-soon .slider
+{
+    position           : absolute;
+    top                : 0;
+    right              : 0;
+    bottom             : 0;
+    left               : 0;
+    width              : 5rem;
+    height             : 2.5rem;
+    cursor             : pointer;
+    -webkit-transition : .4s;
+    transition         : .4s;
+    border-radius      : 34px;
+    background-color   : #2C3181;
+}
+
+.coming-soon .slider:before
+{
+    position           : absolute;
+    bottom             : 4px;
+    left               : 4px;
+    width              : 23px;
+    height             : 23px;
+    content            : '';
+    -webkit-transition : .4s;
+    transition         : .4s;
+    border-radius      : 50%;
+    background-color   : white;
+}
+input:checked + .slider
+{
+    background-color : #CCCCCC;
+}
+
+input:focus + .slider
+{
+    box-shadow : 0 0 1px #2C3181;
+}
+
+input:checked + .slider:before
+{
+    -ms-transform     : translateX(26px);
+    -webkit-transform : translateX(26px);
+    transform         : translateX(26px);
+}
+
+/* Header & Footer */
+.currentDownloadLink--header
+{
+    margin-top : 1rem;
+    font-size  : 1.4rem;
+    color      : var(--purple);
+}
+
+.currentFooterValues
+{
+    margin-top : 1rem;
+    font-size  : 1.3rem;
+    color      : var(--dark-purple);
+}
+
+/* Log in */
+
+.login-div
+{
+    height : 100vh;
+}
+
+.login-div > div
+{
+    width            : 30%;
+    padding          : 4rem 2rem;
+    border           : 2px solid var(--purple);
+    background-color : white;
+}
+
+.login-div img
+{
+    width            : 4rem;
+    height           : 4rem;
+    margin-bottom    : 2rem;
+    padding          : 0.5rem;
+    border-radius    : 3rem;
+    background-color : var(--purple);
+}
+
+.login-div h2
+{
+    margin-bottom : 2rem;
+    font-size     : 2rem;
+    color         : var(--dark-purple);
+}
+
+.login-form
+{
+    width   : 100%;
+    padding : 2rem;
+}

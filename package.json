@@ -1,8 +1,10 @@
 {
-  "homepage" : "https://SamaJabri.github.io/MrServices/",
+  "homepage": "https://SamaJabri.github.io/MrServices/",
   "dependencies": {
     "@fortawesome/fontawesome-free": "^6.1.1",
-    "gh-pages": "^3.2.3"
+    "gh-pages": "^3.2.3",
+    "google-play-scraper": "^9.0.2",
+    "uniq": "^1.0.1"
   },
   "scripts": {
     "predeploy": "npm run build",

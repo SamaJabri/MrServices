@@ -64,13 +64,6 @@
     margin-top : 30rem;
 }
 
-.monthlyOrYearly,
-.monthlyPlans,
-.yearlyPlans
-{
-    filter : blur(10px);
-}
-
 @keyframes animate
 {
     0%,
@@ -137,13 +130,20 @@
     color         : #343434;
 }
 
+.PricingPlanDiv
+{
+    display         : flex;
+    align-items     : center;
+    flex-direction  : column;
+    justify-content : center;
+}
+
 .monthlyOrYearly
 {
     display        : flex;
     flex-direction : row;
     width          : 40%;
     margin-bottom  : 4rem;
-    margin-left    : 16rem;
 }
 
 .monthlyOrYearly label
@@ -181,13 +181,16 @@
 {
     display               : grid;
     justify-content       : center;
-    grid-template-columns : 48% 48% 48%;
+    width                 : 100vw;
+    grid-template-columns : repeat(auto-fill, 25%);
     grid-auto-rows        : calc(110%);
     grid-gap              : 2rem;
 }
 
 .plan
 {
+    height           : 100%;
+    min-height       : auto;
     border-radius    : 0.5rem;
     background-color : #F4F4F9;
 }
@@ -299,8 +302,8 @@
     .monthlyPlans,
     .yearlyPlans
     {
-        grid-template-columns : 40% 40% 40%;
-        grid-auto-rows        : calc(110%);
+        grid-template-columns : repeat(auto-fill, 40%);
+        grid-template-rows    : 1fr;
     }
 
     .planBody button
@@ -317,8 +320,8 @@
     .monthlyPlans,
     .yearlyPlans
     {
-        grid-template-columns : 70% 70%;
-        grid-auto-rows        : calc(54%);
+        /* grid-template-columns : 70% 70%; */
+        grid-auto-rows : 1fr;
     }
 
     .planBody button
@@ -346,8 +349,7 @@
     .monthlyPlans,
     .yearlyPlans
     {
-        grid-template-columns : 105%;
-        grid-auto-rows        : calc(36%);
+        grid-template-columns : 0.7fr;
     }
 
     .planBody button
