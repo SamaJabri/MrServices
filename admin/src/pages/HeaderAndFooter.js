@@ -4,7 +4,7 @@ import FormInput from '../Components/FormInput';
 import ImageInput from '../Components/ImageInput';
 import {useNavigate} from 'react-router-dom';
 
-const HeaderAndFooter = () =>
+const HeaderAndFooter = (props) =>
 {
     const [facebookLink, setFacebookLink] = useState('');
     const [twitterLink, setTwitterLink] = useState('');
@@ -27,7 +27,7 @@ const HeaderAndFooter = () =>
 
     const submitAndReview = () => {
 
-        Axios.put('http://localhost:3001/update/', {
+        Axios.put(`${props.requestPath}update/`, {
             linkOne: facebookLink === '' ? elementValueList[0].value : facebookLink,
             linkTwo: twitterLink === '' ? elementValueList[1].value : twitterLink,
             linkThree: instagramLink === '' ? elementValueList[2].value : instagramLink,
@@ -55,7 +55,7 @@ const HeaderAndFooter = () =>
     };
 
     useEffect( () => {
-        Axios.get('http://localhost:3001/get',{
+        Axios.get(`${props.requestPath}get`,{
             params : { element: '%Link' }
         }).then( (response) => {
             setElementValueList(response.data);
@@ -64,7 +64,7 @@ const HeaderAndFooter = () =>
 
     const submitAndReviewFooter = () => {
 
-        Axios.put('http://localhost:3001/update/', {
+        Axios.put(`${props.requestPath}update/`, {
             description: footerDescription === '' ? footerValueList[0].value : footerDescription,
             linkOne: footerAddress === '' ? footerValueList[1].value : footerAddress,
             linkTwo: footerPhone === '' ? footerValueList[2].value : footerPhone,
@@ -94,7 +94,7 @@ const HeaderAndFooter = () =>
     const navigate = useNavigate();
 
     useEffect( () => {
-        Axios.get('http://localhost:3001/get',{
+        Axios.get(`${props.requestPath}get`,{
             params : { element: 'footer%' }
         }).then( (response) => {
             setFooterValueList(response.data);
@@ -105,7 +105,7 @@ const HeaderAndFooter = () =>
     });
 
     useEffect( () => {
-        Axios.get('http://localhost:3001/get',{
+        Axios.get(`${props.requestPath}get`,{
             params : { element: 'header%' }
         }).then( (response) => {
             setHeaderValueList(response.data);
@@ -183,7 +183,8 @@ const HeaderAndFooter = () =>
                 <form className="form" acceptCharset="utf-8"
                       onSubmit={(event) => event.preventDefault()}>
 
-                    <ImageInput id="footerImage" alt="Logo" element="footerImage" />
+                    <ImageInput id="footerImage" alt="Logo" element="footerImage"
+                                requestPath={props.requestPath} />
 
                     <FormInput label="Description" id="footerDescription" type="text"
                                onchange={(e) => {setFooterDescription(e.target.value)}}/>
@@ -263,7 +264,8 @@ const HeaderAndFooter = () =>
             <h1 className="purple title">Header</h1>
 
             <div className="flex forms">
-               <ImageInput id="headerImage" alt="Logo" element="headerImage" />
+               <ImageInput id="headerImage" alt="Logo" element="headerImage"
+                           requestPath={props.requestPath} />
 
                 <div className="flex-col r-02 currentInfo">
                     <h1>Current Values</h1>

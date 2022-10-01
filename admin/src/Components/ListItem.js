@@ -18,7 +18,7 @@ const ListItem = (props) =>
     // Update List Items
     const submitAndReview = () => {
 
-        Axios.put("http://localhost:3001/update-list", {
+        Axios.put(`${props.requestPath}update-list/`, {
             listItem1: listItem1 === '' ? listItemsInputs[0].value : listItem1,
             listItem2: listItem2 === '' ? listItemsInputs[1].value : listItem2,
             listItem3: listItem3 === '' ? listItemsInputs[2].value : listItem3,
@@ -50,7 +50,7 @@ const ListItem = (props) =>
     };
 
     useEffect( () => {
-        Axios.get('http://localhost:3001/get',{
+        Axios.get(`${props.requestPath}get`,{
             params : { element: props.element }
         }).then( (response) => {
             setListItemsInputs(response.data);

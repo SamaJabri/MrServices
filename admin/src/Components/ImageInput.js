@@ -25,7 +25,7 @@ const ImageInput = (props) =>
             }
         };
 
-        const url = "http://localhost:3001/user/upload";
+        const url = `${props.requestPath}user/upload`;
 
         Axios.post(url, formData, config)
         .then((response) =>

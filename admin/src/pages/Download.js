@@ -4,7 +4,7 @@ import ImageInput from '../Components/ImageInput';
 import FormInput from '../Components/FormInput';
 import {useNavigate} from 'react-router-dom';
 
-const Download = () =>
+const Download = (props) =>
 {
     const [downloadHeader, setDownloadHeader] = useState('');
     const [downloadSubHeader, setDownloadSubHeader] = useState('');
@@ -15,11 +15,8 @@ const Download = () =>
     const [elementValueList, setElementValueList] = useState([]);
 
     const submitAndReview = () => {
-        // const formData = new FormData();
-        // formData.append("file", file);
-        // formData.append("fileName", fileName);
 
-        Axios.put('http://localhost:3001/update/', {
+        Axios.put(`${props.requestPath}update/`, {
             header: downloadHeader === '' ? elementValueList[0].value : downloadHeader,
             subHeader : downloadSubHeader === '' ? elementValueList[1].value : downloadSubHeader,
             description: downloadDescription === '' ? elementValueList[2].value : downloadDescription,
@@ -43,7 +40,7 @@ const Download = () =>
     const navigate = useNavigate();
 
     useEffect( () => {
-        Axios.get('http://localhost:3001/get',{
+        Axios.get(`${props.requestPath}get`,{
             params : { element: 'download%' }
         }).then( (response) => {
             setElementValueList(response.data);
@@ -58,7 +55,8 @@ const Download = () =>
             <h1 className="purple title">Download</h1>
             <div className="flex forms">
                 <form className="form">
-                    <ImageInput id="downloadImage" alt="Download image" element="downloadImage" />
+                    <ImageInput id="downloadImage" alt="Download image" element="downloadImage"
+                                requestPath={props.requestPath} />
 
                     <FormInput label="Title" id="downloadHeader" type="text"
                                onchange={(e) => {setDownloadHeader(e.target.value)}}/>

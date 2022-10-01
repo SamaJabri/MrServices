@@ -3,7 +3,7 @@ import Axios from 'axios';
 import FormInput from '../Components/FormInput';
 import {useNavigate} from 'react-router-dom';
 
-const ContactUs = () =>
+const ContactUs = (props) =>
 {
     const [contactHeader, setContactHeader] = useState('');
     const [contactSubHeader, setContactSubHeader] = useState('');
@@ -13,7 +13,7 @@ const ContactUs = () =>
 
     const submitAndReview = () => {
 
-        Axios.put('http://localhost:3001/update/', {
+        Axios.put(`${props.requestPath}update/`, {
             header: contactHeader === '' ? elementValueList[0].value : contactHeader,
             subHeader : contactSubHeader === '' ? elementValueList[1].value : contactSubHeader,
             description : contactDescription === '' ? elementValueList[2].value : contactDescription,
@@ -31,7 +31,7 @@ const ContactUs = () =>
     const navigate = useNavigate();
 
     useEffect( () => {
-        Axios.get('http://localhost:3001/get',{
+        Axios.get(`${props.requestPath}get`,{
             params : { element: 'contact%' }
         }).then( (response) => {
             setElementValueList(response.data);

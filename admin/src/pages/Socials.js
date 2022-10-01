@@ -3,7 +3,7 @@ import Axios from 'axios';
 import FormInput from '../Components/FormInput';
 import {useNavigate} from 'react-router-dom';
 
-const Socials = () =>
+const Socials = (props) =>
 {
     const [testimonialsHeader, setTestimonialsHeader] = useState('');
     const [testimonialsSubHeader, setTestimonialsSubHeader] = useState('');
@@ -11,7 +11,7 @@ const Socials = () =>
     const [elementValueList, setElementValueList] = useState([]);
 
     const submitAndReview = () => {
-        Axios.put('http://localhost:3001/update/',{
+        Axios.put(`${props.requestPath}update/`,{
             header: testimonialsHeader === '' ? elementValueList[0].value : testimonialsHeader,
             subHeader : testimonialsSubHeader === '' ? elementValueList[1].value : testimonialsSubHeader,
             headerElement: 'testimonialsHeader',
@@ -27,7 +27,7 @@ const Socials = () =>
     const navigate = useNavigate();
 
     useEffect( () => {
-        Axios.get('http://localhost:3001/get',{
+        Axios.get(`${props.requestPath}get`,{
             params : { element: 'testimonials%' }
         }).then( (response) => {
             setElementValueList(response.data);
@@ -38,7 +38,7 @@ const Socials = () =>
     });
 
     const updateFeed = () => {
-        Axios.post('http://localhost:3001/update-posts')
+        Axios.post(`${props.requestPath}update-posts`)
         .then((r) => console.log(r));
     }
 

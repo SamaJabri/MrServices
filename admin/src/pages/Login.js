@@ -4,7 +4,7 @@ import Axios from 'axios';
 import logo from "../data/MrServiceLogo.svg"
 import {useNavigate} from 'react-router-dom';
 
-const Login = () =>
+const Login = (props) =>
 {
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
@@ -13,11 +13,12 @@ const Login = () =>
 
     const verifyLogin = () => {
 
-        Axios.post('http://localhost:3001/get-user', {
+        Axios.post(`${props.requestPath}get-user`, {
             email: email,
             password: password,
         }).then((response) => {
             if(response.data.message) {
+                alert("Please try again!");
                 localStorage.setItem("authenticated", false);
             }
             else {

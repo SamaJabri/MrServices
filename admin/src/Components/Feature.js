@@ -13,7 +13,7 @@ const Feature = (props) =>
 
     const submitAndReview = () => {
 
-        Axios.put('http://localhost:3001/update/', {
+        Axios.put(`${props.requestPath}update/`, {
             header: featureHeader === '' ? elementValueList[0].value : featureHeader,
             description : featureDescription === '' ? elementValueList[1].value : featureDescription,
             headerElement: props.nameId,
@@ -26,7 +26,7 @@ const Feature = (props) =>
     };
 
     useEffect( () => {
-        Axios.get('http://localhost:3001/get',{
+        Axios.get(`${props.requestPath}get`,{
             params : { element: props.getElement }
         }).then( (response) => {
             setElementValueList(response.data);
@@ -60,7 +60,7 @@ const Feature = (props) =>
     }
 
     const deleteInsertion = () => {
-        Axios.put('http://localhost:3001/update/', {
+        Axios.put(`${props.requestPath}update/`, {
             header: ' ',
             description : ' ',
             headerElement: props.nameId,
@@ -117,7 +117,7 @@ const Feature = (props) =>
 
                 <form className="form">
 
-                    <ImageInput id={props.imageId} alt element={props.imageId} />
+                    <ImageInput id={props.imageId} alt element={props.imageId} requestPath={props.requestPath} />
 
                     <FormInput label="Title" id={props.nameId} type="text"
                                onchange={(e) => { setFeatureHeader(e.target.value) }} />

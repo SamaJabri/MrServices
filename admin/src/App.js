@@ -15,7 +15,7 @@ import AboutApp from './pages/AboutApp';
 import { useStateContext } from './contexts/ContextProvider';
 import AboutAppDetails from './pages/AboutAppDetails';
 
-function App() {
+function App(props) {
     const { activeMenu } = useStateContext();
     const [authenticated, setAuthenticated] = useState(localStorage.getItem("authenticated"));
 
@@ -25,9 +25,9 @@ function App() {
             setAuthenticated(loggedUser);
         }
         else {
-            navigate('/')
+            navigate('/');
         }
-    }, []);
+    });
 
     const navigate = useNavigate();
 
@@ -54,17 +54,17 @@ function App() {
 
                     <div>
                         <Routes>
-                            <Route path="/section-one" element={<SectionOne />}/>
-                            <Route path="/about" element={(<AboutApp />)}/>
-                            <Route path="/about-details" element={(<AboutAppDetails />)}/>
-                            <Route path="/features" element={(<Features />)}/>
-                            <Route path="/screenshot" element={(<Screenshot />)}/>
-                            <Route path="/how-it-works" element={(<HowItWorks />)}/>
-                            <Route path="/download" element={(<Download />)}/>
-                            <Route path="/pricing-plan" element={(<PricingPlan />)}/>
-                            <Route path="/socials" element={(<Socials />)}/>
-                            <Route path="/contact" element={(<ContactUs />)}/>
-                            <Route path="/header&footer" element={(<HeaderAndFooter />)}/>
+                            <Route path="/section-one" element={<SectionOne requestPath={props.requestPath} />}/>
+                            <Route path="/about" element={(<AboutApp requestPath={props.requestPath} />)}/>
+                            <Route path="/about-details" element={(<AboutAppDetails requestPath={props.requestPath} />)}/>
+                            <Route path="/features" element={(<Features requestPath={props.requestPath} />)}/>
+                            <Route path="/screenshot" element={(<Screenshot requestPath={props.requestPath} />)}/>
+                            <Route path="/how-it-works" element={(<HowItWorks requestPath={props.requestPath} />)}/>
+                            <Route path="/download" element={(<Download requestPath={props.requestPath} />)}/>
+                            <Route path="/pricing-plan" element={(<PricingPlan requestPath={props.requestPath} />)}/>
+                            <Route path="/socials" element={(<Socials requestPath={props.requestPath} />)}/>
+                            <Route path="/contact" element={(<ContactUs requestPath={props.requestPath} />)}/>
+                            <Route path="/header&footer" element={(<HeaderAndFooter requestPath={props.requestPath} />)}/>
                         </Routes>
                     </div>
 

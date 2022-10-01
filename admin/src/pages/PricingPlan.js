@@ -4,7 +4,7 @@ import Axios from 'axios';
 import PriceCard from '../Components/PriceCard';
 import {useNavigate} from 'react-router-dom';
 
-const PricingPlan = () =>
+const PricingPlan = (props) =>
 {
     const [pricingPlanHeader, setPricingPlanHeader] = useState('');
     const [pricingPlanSubHeader, setPricingPlanSubHeader] = useState('');
@@ -13,7 +13,7 @@ const PricingPlan = () =>
 
     const submitAndReview = () => {
 
-        Axios.put('http://localhost:3001/update/', {
+        Axios.put(`${props.requestPath}update/`, {
             header: pricingPlanHeader === '' ? elementValueList[0].value : pricingPlanHeader,
             subHeader : pricingPlanSubHeader === '' ? elementValueList[1].value : pricingPlanSubHeader,
             headerElement: 'pricingPlanHeader',
@@ -28,7 +28,7 @@ const PricingPlan = () =>
     const navigate = useNavigate();
 
     useEffect( () => {
-        Axios.get('http://localhost:3001/get',{
+        Axios.get(`${props.requestPath}get`,{
             params : { element: 'pricingPlan%' }
         }).then( (response) => {
             setElementValueList(response.data);
@@ -42,7 +42,7 @@ const PricingPlan = () =>
 
     const comingSoonValue = () => {
 
-        Axios.put('http://localhost:3001/update/', {
+        Axios.put(`${props.requestPath}update/`, {
             header: comingSoon,
             headerElement: 'comingSoon',
         });
@@ -124,19 +124,22 @@ const PricingPlan = () =>
                             priceId="firstPlanPriceMonthly" currencyId="firstPlanCurrencyMonthly"
                             item1="firstPlanItem1Monthly" item2="firstPlanItem2Monthly" item3="firstPlanItem3Monthly"
                             item4="firstPlanItem4Monthly" item5="firstPlanItem5Monthly" item6="firstPlanItem6Monthly"
-                            item7="firstPlanItem7Monthly" item8="firstPlanItem8Monthly" element="firstPlanItem_Monthly" />
+                            item7="firstPlanItem7Monthly" item8="firstPlanItem8Monthly" element="firstPlanItem_Monthly"
+                            requestPath={props.requestPath} />
 
                 <PriceCard name="Plan Two" nameId="secondPlanNameMonthly" descriptionId="secondPlanDescriptionMonthly"
                            priceId="secondPlanPriceMonthly" currencyId="secondPlanCurrencyMonthly"
                            item1="secondPlanItem1Monthly" item2="secondPlanItem2Monthly" item3="secondPlanItem3Monthly"
                            item4="secondPlanItem4Monthly" item5="secondPlanItem5Monthly" item6="secondPlanItem6Monthly"
-                           item7="secondPlanItem7Monthly" item8="secondPlanItem8Monthly" element="secondPlanItem_Monthly"/>
+                           item7="secondPlanItem7Monthly" item8="secondPlanItem8Monthly" element="secondPlanItem_Monthly"
+                           requestPath={props.requestPath} />
 
                 <PriceCard name="Plan Three" nameId="thirdPlanNameMonthly" descriptionId="thirdPlanDescriptionMonthly"
                            priceId="thirdPlanPriceMonthly" currencyId="thirdPlanCurrencyMonthly"
                            item1="thirdPlanItem1Monthly" item2="thirdPlanItem2Monthly" item3="thirdPlanItem3Monthly"
                            item4="thirdPlanItem4Monthly" item5="thirdPlanItem5Monthly" item6="thirdPlanItem6Monthly"
-                           item7="thirdPlanItem7Monthly" item8="thirdPlanItem8Monthly" element="thirdPlanItem_Monthly" />
+                           item7="thirdPlanItem7Monthly" item8="thirdPlanItem8Monthly" element="thirdPlanItem_Monthly"
+                           requestPath={props.requestPath} />
             </div>
 
             <div className="flex-col pricing-plans-yearly" id="pricing-plans-yearly">
@@ -145,19 +148,21 @@ const PricingPlan = () =>
                            item1="firstPlanItem1Yearly" item2="firstPlanItem2Yearly" item3="firstPlanItem3Yearly"
                            item4="firstPlanItem4Yearly" item5="firstPlanItem5Yearly" item6="firstPlanItem6Yearly"
                            item7="firstPlanItem7Yearly" item8="firstPlanItem8Yearly" element="firstPlanItem_Yearly"
-                />
+                           requestPath={props.requestPath} />
 
                 <PriceCard name="Plan Two" nameId="secondPlanNameYearly" descriptionId="secondPlanDescriptionYearly"
                            priceId="secondPlanPriceYearly" currencyId="secondPlanCurrencyYearly"
                            item1="secondPlanItem1Yearly" item2="secondPlanItem2Yearly" item3="secondPlanItem3Yearly"
                            item4="secondPlanItem4Yearly" item5="secondPlanItem5Yearly" item6="secondPlanItem6Yearly"
-                           item7="secondPlanItem7Yearly" item8="secondPlanItem8Yearly" element="secondPlanItem_Yearly"/>
+                           item7="secondPlanItem7Yearly" item8="secondPlanItem8Yearly" element="secondPlanItem_Yearly"
+                           requestPath={props.requestPath} />
 
                 <PriceCard name="Plan Three" nameId="thirdPlanNameYearly" descriptionId="thirdPlanDescriptionYearly"
                            priceId="thirdPlanPriceYearly" currencyId="thirdPlanCurrencyYearly"
                            item1="thirdPlanItem1Yearly" item2="thirdPlanItem2Yearly" item3="thirdPlanItem3Yearly"
                            item4="thirdPlanItem4Yearly" item5="thirdPlanItem5Yearly" item6="thirdPlanItem6Yearly"
-                           item7="thirdPlanItem7Yearly" item8="thirdPlanItem8Yearly" element="thirdPlanItem_Yearly"/>
+                           item7="thirdPlanItem7Yearly" item8="thirdPlanItem8Yearly" element="thirdPlanItem_Yearly"
+                           requestPath={props.requestPath} />
             </div>
         </div>
     );

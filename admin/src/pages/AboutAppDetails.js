@@ -5,7 +5,7 @@ import ReactQuill from 'react-quill';
 import 'react-quill/dist/quill.snow.css';
 import {useNavigate} from 'react-router-dom';
 
-const AboutAppDetails = () =>
+const AboutAppDetails = (props) =>
 {
     const [aboutDetailsDescription, setAboutAppDetailsDescription] = useState('');
 
@@ -13,7 +13,7 @@ const AboutAppDetails = () =>
 
     const submitAndReview = () => {
 
-        Axios.put('http://localhost:3001/update/', {
+        Axios.put(`${props.requestPath}update/`, {
             description: aboutDetailsDescription === '' ? elementValueList[2].value : aboutDetailsDescription,
             descriptionElement: 'aboutDetailsDescription',
         });
@@ -25,7 +25,7 @@ const AboutAppDetails = () =>
     const navigate = useNavigate();
 
     useEffect( () => {
-        Axios.get('http://localhost:3001/get',{
+        Axios.get(`${props.requestPath}get`,{
             params : { element: 'aboutDetails%' }
         }).then( (response) => {
             setElementValueList(response.data);
@@ -44,10 +44,7 @@ const AboutAppDetails = () =>
                       onSubmit={(event) => event.preventDefault()}>
                     <ImageInput id="aboutDetailsImage" alt="About app details image"
                                 element="aboutDetailsImage" style={{ width: '45%'}}
-                    />
-
-                    {/*<FormInput label="Description" id="aboutDetailsDescription" type="textarea"*/}
-                    {/*           onchange={(e) => {setAboutAppDetailsDescription(e.target.value)}}/>*/}
+                                requestPath={props.requestPath} />
 
                     <ReactQuill onChange={setAboutAppDetailsDescription} style={{ height: '55rem', width:'100%', }}
                     placeholder="Write Description..."/>

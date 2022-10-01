@@ -15,7 +15,7 @@ const PriceCard = (props) =>
 
     const submitAndReview = () => {
 
-        Axios.put('http://localhost:3001/update/', {
+        Axios.put(`${props.requestPath}update/`, {
             header: planName === '' ? elementValueList[0].value : planName,
             description : planDescription === '' ? elementValueList[1].value : planDescription,
             price : planPrice === '' ? elementValueList[2].value : planPrice,
@@ -34,7 +34,7 @@ const PriceCard = (props) =>
     };
 
     useEffect( () => {
-        Axios.get('http://localhost:3001/get',{
+        Axios.get(`${props.requestPath}get`,{
             params : {
                 element: props.nameId.split('Name')[0] + "%",
             }
@@ -70,7 +70,7 @@ const PriceCard = (props) =>
     }
 
     const deleteInsertion = () => {
-        Axios.put('http://localhost:3001/update/', {
+        Axios.put(`${props.requestPath}update/`, {
             header: ' ',
             description : ' ',
             price : ' ',
@@ -109,7 +109,7 @@ const PriceCard = (props) =>
     }
 
     const deleteFeatures = () => {
-        Axios.put('http://localhost:3001/update-list/', {
+        Axios.put(`${props.requestPath}update-list/`, {
             listItem1: ' ',
             listItem2: ' ',
             listItem3: ' ',

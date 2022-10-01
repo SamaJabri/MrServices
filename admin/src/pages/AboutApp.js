@@ -4,7 +4,7 @@ import FormInput from '../Components/FormInput';
 import Axios from 'axios';
 import {Link, useNavigate} from 'react-router-dom';
 
-const AboutApp = () =>
+const AboutApp = (props) =>
 {
     const [aboutHeader, setAboutHeader] = useState('');
     const [aboutSubHeader, setAboutSubHeader] = useState('');
@@ -14,7 +14,7 @@ const AboutApp = () =>
     const [elementValueList, setElementValueList] = useState([]);
 
     const submitAndReview = () => {
-        Axios.put('http://localhost:3001/update/',{
+        Axios.put(`${props.requestPath}update/`,{
             header: aboutHeader === '' ? elementValueList[1].value : aboutHeader,
             subHeader : aboutSubHeader === '' ? elementValueList[2].value : aboutSubHeader,
             description: aboutDescription === '' ? elementValueList[3].value : aboutDescription,
@@ -35,7 +35,7 @@ const AboutApp = () =>
     const navigate = useNavigate();
 
     useEffect( () => {
-        Axios.get('http://localhost:3001/get',{
+        Axios.get(`${props.requestPath}get/`,{
             params : { element: 'about%' }
         }).then( (response) => {
             setElementValueList(response.data);
@@ -51,7 +51,8 @@ const AboutApp = () =>
             <div className="flex forms">
                 <form className="form"
                       onSubmit={(event) => event.preventDefault()}>
-                    <ImageInput id="aboutImage" alt="About app image" element="aboutImage" />
+                    <ImageInput id="aboutImage" alt="About app image" element="aboutImage"
+                                requestPath={props.requestPath} />
 
                     <FormInput label="Title" id="aboutHeader" type="text"
                                onchange={(e) => {setAboutHeader(e.target.value)}}/>

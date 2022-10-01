@@ -4,7 +4,7 @@ import Feature from '../Components/Feature';
 import Axios from 'axios';
 import {useNavigate} from 'react-router-dom';
 
-const HowItWorks = () =>
+const HowItWorks = (props) =>
 {
     const [howItWorksHeader, setHowItWorksHeader] = useState('');
     const [howItWorksSubHeader, setHowItWorksSubHeader] = useState('');
@@ -12,11 +12,8 @@ const HowItWorks = () =>
     const [elementValueList, setElementValueList] = useState([]);
 
     const submitAndReview = () => {
-        // const formData = new FormData();
-        // formData.append("file", file);
-        // formData.append("fileName", fileName);
 
-        Axios.put('http://localhost:3001/update/', {
+        Axios.put(`${props.requestPath}update/`, {
             header: howItWorksHeader === '' ? elementValueList[0].value : howItWorksHeader,
             subHeader : howItWorksSubHeader === '' ? elementValueList[1].value : howItWorksSubHeader,
             headerElement: 'howItWorksHeader',
@@ -31,7 +28,7 @@ const HowItWorks = () =>
     const navigate = useNavigate();
 
     useEffect( () => {
-        Axios.get('http://localhost:3001/get',{
+        Axios.get(`${props.requestPath}get`,{
             params : { element: 'howItWorks%' }
         }).then( (response) => {
             setElementValueList(response.data);
@@ -85,15 +82,15 @@ const HowItWorks = () =>
             <div className="flex-col how-it-works-steps">
                 <Feature name="Step One" getElement='_%Step%' link="#HowItWorks"
                          nameId="firstStepHeader" descriptionId="firstStepDescription"
-                         imageId="firstStepImage"/>
+                         imageId="firstStepImage" requestPath={props.requestPath} />
 
                 <Feature name="Step Two" getElement='_%Step%' link="#HowItWorks"
                          nameId="secondStepHeader" descriptionId="secondStepDescription"
-                         imageId="secondStepImage"/>
+                         imageId="secondStepImage" requestPath={props.requestPath} />
 
                 <Feature name="Step Three" getElement='_%Step%' link="#HowItWorks"
                          nameId="thirdStepHeader" descriptionId="thirdStepDescription"
-                         imageId="thirdStepImage"/>
+                         imageId="thirdStepImage" requestPath={props.requestPath} />
 
             </div>
         </div>

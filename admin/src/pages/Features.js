@@ -4,7 +4,7 @@ import Axios from 'axios';
 import Feature from '../Components/Feature';
 import {useNavigate} from 'react-router-dom';
 
-const Features = () =>
+const Features = (props) =>
 {
     const [featuresHeader, setFeaturesHeader] = useState('');
     const [featuresSubHeader, setFeaturesSubHeader] = useState('');
@@ -13,7 +13,7 @@ const Features = () =>
 
     const submitAndReview = () => {
 
-        Axios.put('http://localhost:3001/update/', {
+        Axios.put(`${props.requestPath}update/`, {
             header: featuresHeader === '' ? elementValueList[0].value : featuresHeader,
             subHeader : featuresSubHeader === '' ? elementValueList[1].value : featuresSubHeader,
             headerElement: 'featuresHeader',
@@ -28,7 +28,7 @@ const Features = () =>
     const navigate = useNavigate();
 
     useEffect( () => {
-        Axios.get('http://localhost:3001/get',{
+        Axios.get(`${props.requestPath}get`,{
             params : { element: 'features%' }
         }).then( (response) => {
             setElementValueList(response.data);
@@ -82,27 +82,27 @@ const Features = () =>
             <div className="flex-col features-list">
                 <Feature name="Feature One" getElement='_%Feature%' link="#Feature"
                     nameId="firstFeatureHeader" descriptionId="firstFeatureDescription"
-                    imageId="firstFeatureImage"/>
+                    imageId="firstFeatureImage" requestPath={props.requestPath} />
 
                 <Feature name="Feature Two" getElement='_%Feature%' link="#Feature"
                          nameId="secondFeatureHeader" descriptionId="secondFeatureDescription"
-                         imageId="secondFeatureImage"/>
+                         imageId="secondFeatureImage" requestPath={props.requestPath} />
 
                 <Feature name="Feature Three" getElement='_%Feature%' link="#Feature"
                          nameId="thirdFeatureHeader" descriptionId="thirdFeatureDescription"
-                         imageId="thirdFeatureImage"/>
+                         imageId="thirdFeatureImage" requestPath={props.requestPath} />
 
                 <Feature name="Feature Four" getElement='_%Feature%' link="#Feature"
                          nameId="fourthFeatureHeader" descriptionId="fourthFeatureDescription"
-                         imageId="fourthFeatureImage"/>
+                         imageId="fourthFeatureImage" requestPath={props.requestPath} />
 
                 <Feature name="Feature Five" getElement='_%Feature%' link="#Feature"
                          nameId="fifthFeatureHeader" descriptionId="fifthFeatureDescription"
-                         imageId="fifthFeatureImage"/>
+                         imageId="fifthFeatureImage" requestPath={props.requestPath} />
 
                 <Feature name="Feature Six" getElement='_%Feature%' link="#Feature"
                          nameId="sixthFeatureHeader" descriptionId="sixthFeatureDescription"
-                         imageId="sixthFeatureImage"/>
+                         imageId="sixthFeatureImage" requestPath={props.requestPath} />
 
             </div>
 

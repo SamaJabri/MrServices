@@ -15,7 +15,7 @@ function SectionOne (props)
 
     const submitAndReview = () => {
 
-        Axios.put('http://localhost:3001/update/', {
+        Axios.put(`${props.requestPath}update/`, {
             header: sectionOneHeader === '' ? elementValueList[1].value : sectionOneHeader,
             description: sectionOneDescription === '' ? elementValueList[2].value : sectionOneDescription,
             search : sectionOneSearch === '' ? elementValueList[3].value : sectionOneSearch,
@@ -34,7 +34,7 @@ function SectionOne (props)
 
     useEffect( () => {
 
-        Axios.get('http://localhost:3001/get',{
+        Axios.get(`${props.requestPath}get`,{
         params : { element: 'sectionOne%' }
         }).then( (response) => {
             setElementValueList(response.data);
@@ -51,8 +51,7 @@ function SectionOne (props)
             <div className="flex forms">
                 <form className="form" onSubmit={(event) => event.preventDefault()}>
                     <ImageInput id="sectionOneImage" alt="Section One image"
-                                element="sectionOneImage"
-                    />
+                                element="sectionOneImage" requestPath={props.requestPath} />
 
                     <FormInput label="Title" id="sectionOneHeader" type="text"
                                onchange={(e) => {setSectionOneHeader(e.target.value)}}/>
@@ -95,13 +94,6 @@ function SectionOne (props)
                     </a>
                 </div>
             </div>
-
-
-
-                {/*<form method="post">*/}
-                {/*    <FormInput label="Title" id="SectionOneHeader" type="text" />*/}
-                {/*    <FormInput label="Description" id="SectionOneDescription" type="textarea" />*/}
-                {/*</form>*/}
         </div>
     );
 }

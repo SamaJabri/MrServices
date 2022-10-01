@@ -4,6 +4,14 @@ const cors = require('cors');
 const app = express();
 const mysql = require('mysql');
 
+const path = require('path');
+
+app.use(express.static(path.join(__dirname, 'build')));
+
+app.get('/*', function (req, res) {
+    res.sendFile(path.join(__dirname, 'build', 'index.html'));
+});
+
 const db = mysql.createPool({
     host: "localhost",
     user: "root",
@@ -52,7 +60,7 @@ app.post('/get-user', (req, res) => {
             else {
                 res.send({ message: "Wrong username/password combination" })
             }
-    })
+        })
 })
 
 app.post('/insert/list-item', (req, res) => {
