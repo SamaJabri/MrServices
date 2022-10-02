@@ -22,7 +22,7 @@ const requestPath = "http://localhost:3001/";
 
 root.render(
   <ContextProvider>
-      <HashRouter basename="/MrServices/admin/build">
+      <HashRouter basename="https://samajabri.github.io/MrServices" >
           <div>
               <Routes>
                   <Route path="/" element={<Login requestPath={requestPath} />}/>

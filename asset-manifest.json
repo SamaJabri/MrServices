@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/MrServices/admin/build/static/css/main.e3b9e549.css",
+    "main.js": "/MrServices/admin/build/static/js/main.ba3c53cc.js",
+    "static/media/default-image.jpg": "/MrServices/admin/build/static/media/default-image.636c7ce515c0ddb46056.jpg",
+    "static/media/MrServiceLogo.svg": "/MrServices/admin/build/static/media/MrServiceLogo.40045f31f7a8d9402439940e040b5667.svg",
+    "index.html": "/MrServices/admin/build/index.html",
+    "main.e3b9e549.css.map": "/MrServices/admin/build/static/css/main.e3b9e549.css.map",
+    "main.ba3c53cc.js.map": "/MrServices/admin/build/static/js/main.ba3c53cc.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e3b9e549.css",
+    "static/js/main.ba3c53cc.js"
+  ]
+}
