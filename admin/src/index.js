@@ -22,7 +22,7 @@ const requestPath = "http://localhost:3001/";
 
 root.render(
   <ContextProvider>
-      <HashRouter basename="https://samajabri.github.io/MrServices" >
+      <BrowserRouter basename="https://samajabri.github.io/MrServices" >
           <div>
               <Routes>
                   <Route path="/" element={<Login requestPath={requestPath} />}/>
@@ -42,7 +42,7 @@ root.render(
               </Routes>
           </div>
 
-      </HashRouter>
+      </BrowserRouter>
   </ContextProvider>
 );
 
