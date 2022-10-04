@@ -2,11 +2,13 @@
 {
     font-family : 'Comfortaa', cursive;
 }
+
 body
 {
-    width  : 100%;
-    margin : 0;
-    color  : white;
+    width      : 100%;
+    margin     : 0;
+    color      : white;
+    overflow-x : hidden;
 }
 
 header
